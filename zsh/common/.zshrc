@@ -32,8 +32,11 @@ setopt print_eight_bit
 # '#' 以降をコメントとして扱う
 setopt interactive_comments
 
-# OS 特有の設定ファイルをロードする
-source ~/.zsh-confs/ubuntu/.zshrc
+# 各種ファイルをロードする
+source ~/.dotfiles/zsh/common/.zshrc-aliases
+source ~/.dotfiles/zsh/common/.zshrc-functions
 
-# エイリアス設定ファイルをロードする
-source ~/.zsh-confs/.zshrc-aliases
+# OS 特有の設定ファイルをロードする
+source ~/.dotfiles/zsh/$(get-os)/.zshrc
+
+
