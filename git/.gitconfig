@@ -1,0 +1,50 @@
+[include]
+	path = ~/.gitconfig.local
+
+[color]
+	ui = true
+
+	# 使用可能な色
+	# normal
+	# black
+	# red
+	# green
+	# yellow
+	# blue
+	# magenta
+	# cyan
+	# white
+
+[color "status"]
+
+	header		= yellow				# the header text of the status message
+	updated		= cyan				# files which are added but not committed
+	changed		= magenta				# files which are changed but not added in the index
+	untracked	= green				# files which are not tracked by Git
+	branch		= magenta				# the current branch
+	nobranch	= magenta				# the color the no branch warning is shown in, defaulting to red
+
+[alias]
+	# アルファベット順に記載のこと
+	bl = blame
+	br = branch -a
+	co = checkout
+	# log options
+	## diff
+	### C: detect copy
+	### M: detect rename
+	## pretty format
+	### %ad		: author date (format respects --date= option)
+	### %cn		: committer name
+	### %d		: ref names, like the --decorate option of git-log(1)
+	### %h		: abbreviated commit hash
+	### %s		: subject
+	lg = log --graph --all --color --date-order -C -M --pretty=format:'%ad %Cgreen[%an]%Creset %s %C(yellow)%d%Creset' --date=short --name-status
+	ls = ls-files
+	st = status
+
+[push]
+	default = simple
+
+[core]
+	excludesfile = ~/.gitignore
