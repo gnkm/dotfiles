@@ -1,7 +1,7 @@
 export PATH=$HOME/.cask/bin:$PATH
 
 # プロンプト
-export PS1="[%*] %d %% "
+export PS1="%K{green}[%*] %k%K{magenta}%d %%%k "
 
 # 補完機能を有効にする
 autoload -Uz compinit
