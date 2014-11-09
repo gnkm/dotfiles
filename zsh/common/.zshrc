@@ -1,4 +1,4 @@
-export PATH=$HOME/.cask/bin:$PATH
+export PATH=$HOME/bin:$HOME/.cask/bin:$PATH
 
 # プロンプト
 export PS1="%K{green}[%*] %k%K{magenta}%d %%%k "
