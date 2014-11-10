@@ -1,4 +1,5 @@
 ;;; ===== ウインドウ =====
+(load-theme 'zenburn t)
 
 ;; 行番号を常に表示
 (global-linum-mode t)

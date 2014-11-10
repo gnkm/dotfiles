@@ -2,3 +2,4 @@
 
 (depends-on "init-loader")
 (depends-on "pallet")
+(depends-on "zenburn-theme")
