@@ -1,7 +1,10 @@
+# ===== original config =====
+
 export PATH=$HOME/bin:$HOME/.cask/bin:$PATH
 
 # プロンプト
-export PS1="%K{green}[%*] %k%K{magenta}%d %%%k "
+TRIANGLE=$(echo -e "\ue0b0")
+export PS1="%K{green}[%*]%k%K{magenta}%F{green}${TRIANGLE}%f%d %%%k%F{magenta}${TRIANGLE}%f "
 
 # 補完機能を有効にする
 autoload -Uz compinit
@@ -38,5 +41,3 @@ source ~/.dotfiles/zsh/common/.zshrc-functions
 
 # OS 特有の設定ファイルをロードする
 source ~/.dotfiles/zsh/$(get-os)/.zshrc
-
-
