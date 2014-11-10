@@ -10,3 +10,7 @@
 
 (require 'add-to-load-path)
 (add-to-load-path "public_repos")
+
+;; init-loader
+(require 'init-loader)
+(init-loader-load "~/.emacs.d/conf")

@@ -1,6 +1,4 @@
-(source gnu)
-(source marmalade)
 (source melpa)
-(source org)
 
+(depends-on "init-loader")
 (depends-on "pallet")
