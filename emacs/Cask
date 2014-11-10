@@ -1,5 +1,6 @@
 (source melpa)
 
 (depends-on "init-loader")
+(depends-on "magit")
 (depends-on "pallet")
 (depends-on "zenburn-theme")
