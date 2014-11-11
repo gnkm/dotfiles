@@ -22,11 +22,5 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'syntax-highlighting'
 
-#
-# Syntax-highlighting
-#
-
-
-
 # modify some aliases
 alias rm="${aiases[rm]:-rm}"	# remove -i option
