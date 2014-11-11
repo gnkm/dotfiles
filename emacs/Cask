@@ -1,6 +1,8 @@
 (source melpa)
 
+(depends-on "flymake-yaml")
 (depends-on "init-loader")
 (depends-on "magit")
 (depends-on "pallet")
+(depends-on "yaml-mode")
 (depends-on "zenburn-theme")
