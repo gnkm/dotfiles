@@ -23,4 +23,4 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting'
 
 # modify some aliases
-alias rm="${aiases[rm]:-rm}"	# remove -i option
+alias rm="rm"	# remove -i option
