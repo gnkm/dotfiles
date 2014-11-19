@@ -1,7 +1,1 @@
-function get-os() {
-    case $(uname -v | awk '{print $1}' | tr -d '#[0-9]') in
-	'Darwin') echo 'macosx';;
-	'-Ubuntu') echo 'ubuntu';;
-	'') echo 'centos';;
-    esac
-}
+
