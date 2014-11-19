@@ -1,6 +1,15 @@
-# ===== original config =====
+# source antigen
+source $HOME/vendor/antigen/antigen.zsh
 
-# definitions of config files and directories
+ZSH_DIR=$HOME/.zsh
+COMMON_ANTIGEN_FILENAME=common-antigen
+COMMON_ANTIGEN_FILE=$ZSH_DIR/$COMMON_ANTIGEN_FILENAME
+
+if [ -s $COMMON_ANTIGEN_FILE ]; then
+    source $COMMON_ANTIGEN_FILE
+fi
+
+# ===== original config =====
 
 export PATH=$HOME/bin:$HOME/bin/vendor:$HOME/.cask/bin:$PATH
 
@@ -38,27 +47,23 @@ setopt print_eight_bit
 setopt interactive_comments
 
 # エイリアスファイルをロードする
-readonly ZSH_DIR=$HOME/.zsh
-readonly COMMON_ALIASES_FILENAME=common-aliases
-readonly COMMON_ALIASES_FILE=$ZSH_DIR/$COMMON_ALIASES_FILENAME
+COMMON_ALIASES_FILENAME=common-aliases
+COMMON_ALIASES_FILE=$ZSH_DIR/$COMMON_ALIASES_FILENAME
 
-if [ -s $COMMON_ALIASES_FILE ] then;
+if [ -s $COMMON_ALIASES_FILE ]; then
     source $COMMON_ALIASES_FILE
 fi
 
 # OS 特有の設定ファイルをロードする
-readonly OS_SPECIFIC_ZSHRC_FILENAME=os-specific-zshrc
-readonly OS_SPECIFIC_ZSHRC_FILE=$ZSH_DIR/$OS_SPECIFIC_ZSHRC_FILENAME
-readonly OS_SPECIFIC_ALIASES_FILENAME=os-specific-aliases
-readonly OS_SPECIFIC_ALIASES_FILE=$ZSH_DIR/$OS_SPECIFIC_ALIASES_FILENAME
+OS_SPECIFIC_ZSHRC_FILENAME=os-specific-zshrc
+OS_SPECIFIC_ZSHRC_FILE=$ZSH_DIR/$OS_SPECIFIC_ZSHRC_FILENAME
+OS_SPECIFIC_ALIASES_FILENAME=os-specific-aliases
+OS_SPECIFIC_ALIASES_FILE=$ZSH_DIR/$OS_SPECIFIC_ALIASES_FILENAME
 
-if [ -s $OS_SPECIFIC_ZSHRC_FILE ] then;
+if [ -s $OS_SPECIFIC_ZSHRC_FILE ]; then
     source $OS_SPECIFIC_ZSHRC_FILE
 fi
 
-if [ -s $OS_SPECIFIC_ALIASES_FILE ] then;
+if [ -s $OS_SPECIFIC_ALIASES_FILE ]; then
     source $OS_SPECIFIC_ALIASES_FILE
 fi
-
-# load antigen-hs (https://github.com/Tarrasch/antigen-hs
-source ~/.zsh/antigen-hs/init.zsh
