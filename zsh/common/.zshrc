@@ -1,9 +1,6 @@
-# ===== Source Prezto. =====
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
-fi
-
 # ===== original config =====
+
+# definitions of config files and directories
 
 export PATH=$HOME/bin:$HOME/bin/vendor:$HOME/.cask/bin:$PATH
 
@@ -40,9 +37,28 @@ setopt print_eight_bit
 # '#' 以降をコメントとして扱う
 setopt interactive_comments
 
-# 各種ファイルをロードする
-source ~/.dotfiles/zsh/common/.zshrc-aliases
-source ~/.dotfiles/zsh/common/.zshrc-functions
+# エイリアスファイルをロードする
+readonly ZSH_DIR=$HOME/.zsh
+readonly COMMON_ALIASES_FILENAME=common-aliases
+readonly COMMON_ALIASES_FILE=$ZSH_DIR/$COMMON_ALIASES_FILENAME
+
+if [ -s $COMMON_ALIASES_FILE ] then;
+    source $COMMON_ALIASES_FILE
+fi
 
 # OS 特有の設定ファイルをロードする
-source ~/.dotfiles/zsh/$(get-os)/.zshrc
+readonly OS_SPECIFIC_ZSHRC_FILENAME=os-specific-zshrc
+readonly OS_SPECIFIC_ZSHRC_FILE=$ZSH_DIR/$OS_SPECIFIC_ZSHRC_FILENAME
+readonly OS_SPECIFIC_ALIASES_FILENAME=os-specific-aliases
+readonly OS_SPECIFIC_ALIASES_FILE=$ZSH_DIR/$OS_SPECIFIC_ALIASES_FILENAME
+
+if [ -s $OS_SPECIFIC_ZSHRC_FILE ] then;
+    source $OS_SPECIFIC_ZSHRC_FILE
+fi
+
+if [ -s $OS_SPECIFIC_ALIASES_FILE ] then;
+    source $OS_SPECIFIC_ALIASES_FILE
+fi
+
+# load antigen-hs (https://github.com/Tarrasch/antigen-hs
+source ~/.zsh/antigen-hs/init.zsh
