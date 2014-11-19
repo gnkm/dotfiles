@@ -5,6 +5,9 @@
 (global-linum-mode t)
 ;; 対応する括弧を表示
 (show-paren-mode t)
+;; 現在行と桁をハイライト
+(require 'crosshairs)
+(crosshairs-mode 1)
 ;; ediff 関連のバッファを 1つのフレームにまとめる
 (setq ediff-window-setup-function 'ediff-setup-window-plain)
 ;; font

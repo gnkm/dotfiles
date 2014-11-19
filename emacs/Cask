@@ -1,5 +1,6 @@
 (source melpa)
 
+(depends-on "crosshairs")
 (depends-on "flymake-yaml")
 (depends-on "init-loader")
 (depends-on "magit")
