@@ -7,6 +7,10 @@
 (show-paren-mode t)
 ;; ediff 関連のバッファを 1つのフレームにまとめる
 (setq ediff-window-setup-function 'ediff-setup-window-plain)
+;; font
+(set-face-attribute 'default nil
+		    :family "Ricty"
+		    :height 110)
 
 ;;; ===== ミニバッファ =====
 
