@@ -2,6 +2,7 @@
 
 (depends-on "crosshairs")
 (depends-on "flymake-yaml")
+(depends-on "helm")
 (depends-on "init-loader")
 (depends-on "magit")
 (depends-on "pallet")
