@@ -21,6 +21,9 @@ export PS1="%K{green}[%*]%k%K{magenta}%F{green}${TRIANGLE}%f%d %%%k%F{magenta}${
 autoload -Uz compinit
 compinit
 
+# http://gihyo.jp/dev/serial/01/zsh-book/0005
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z} r:|[-_.]=**' '+m:{A-Z}={a-z}'
+
 # ヒストリの設定
 HISTFILE=~/.zsh_history
 HISTSIZE=123456
