@@ -1,4 +1,4 @@
-# source antigen
+# ===== antigen =====
 source $HOME/vendor/antigen/antigen.zsh
 
 ZSH_DIR=$HOME/.zsh

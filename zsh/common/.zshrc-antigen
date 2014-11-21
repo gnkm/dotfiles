@@ -1,4 +1,12 @@
-# Syntax highlighting bundle.
+antigen bundle rupa/z
+_Z_CMD=j
+_Z_DATA=$ZSH_DIR/.z
+# https://github.com/sharat87/lawn/blob/master/shell/zsh
+add-zsh-hook precmd _z_precmd
+function _z_precmd {
+_z --add "$PWD"
+}
+
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Tell antigen that you're done.
