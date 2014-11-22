@@ -11,7 +11,7 @@ fi
 
 # ===== original config =====
 
-export PATH=$HOME/bin:$HOME/bin/vendor:$HOME/.cask/bin:$PATH
+export PATH=$HOME/bin:$HOME/.cask/bin:$PATH
 
 # プロンプト
 TRIANGLE=$(echo -e "\ue0b0")
