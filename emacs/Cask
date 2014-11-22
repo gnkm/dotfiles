@@ -8,5 +8,6 @@
 (depends-on "init-loader")
 (depends-on "magit")
 (depends-on "pallet")
+(depends-on "twittering-mode")
 (depends-on "yaml-mode")
 (depends-on "zenburn-theme")
