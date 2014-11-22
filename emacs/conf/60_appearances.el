@@ -1,8 +1,9 @@
-;;; ===== ウインドウ =====
+;;; ===== メインバッファ =====
 (load-theme 'zenburn t)
 
 ;; 行番号を常に表示
 (global-linum-mode t)
+(setq linum-format "%4d")
 ;; 対応する括弧を表示
 (show-paren-mode t)
 ;; 現在行と桁をハイライト
@@ -14,10 +15,17 @@
 (set-face-attribute 'default nil
 		    :family "Ricty"
 		    :height 110)
+;; ダイアログボックスを使わない
+(setq use-dialog-box nil)
 
-;;; ===== ミニバッファ =====
+;;; ===== モードライン =====
+;; カーソルのある関数を表示する
+(which-function-mode 1)
 
-
-;;; ===== ツールバー =====
+;;; ===== フレーム =====
+;; タイトルバーにファイルのフルパスを表示
+(setq frame-title-format "%f")
+;; メニューバー非表示
+(menu-bar-mode 0)
 ;; ツールバー非表示
-(tool-bar-mode -1)
+(tool-bar-mode 0)
