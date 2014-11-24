@@ -49,6 +49,15 @@ setopt print_eight_bit
 # '#' 以降をコメントとして扱う
 setopt interactive_comments
 
+# ls のカラースキーム
+if [ -s ~/.dircolors ]; then
+    if type dircolors > /dev/null 2>&1; then
+        eval $(dircolors ~/.dircolors)
+    elif type gdircolors > /dev/null 2>&1; then
+        eval $(gdircolors ~/.dircolors)
+    fi
+fi
+
 # エイリアスファイルをロードする
 COMMON_ALIASES_FILENAME=common-aliases
 COMMON_ALIASES_FILE=$ZSH_DIR/$COMMON_ALIASES_FILENAME
