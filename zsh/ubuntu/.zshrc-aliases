@@ -1,0 +1,3 @@
+# output の引数は xrandr -q で確認のこと
+alias xdisp-on='xrandr --output VGA1 --right-of LVDS1 --mode 1920x1080 --primary'
+alias xdisp-off='xrandr --output VGA1 --off'
