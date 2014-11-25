@@ -10,8 +10,6 @@ call neobundle#begin(expand('~/.vim/bundle'))
 " neobundle.vim を更新するための設定
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundleLazy 'cespare/zenburn'
-
 NeoBundleLazy 'Shougo/unite.vim', {
 	      \ 'depends': [
 	      \	      'Shougo/vimfiler',
@@ -25,6 +23,8 @@ NeoBundleLazy 'Shougo/unite.vim', {
 	      \				'UniteWithCursorWord',
 	      \				'UniteWithInput'],
 	      \ }}
+
+NeoBundleLazy 'cespare/zenburn'
 
 call neobundle#end()
 
