@@ -24,7 +24,10 @@ NeoBundleLazy 'Shougo/unite.vim', {
 	      \				'UniteWithInput'],
 	      \ }}
 
+NeoBundle 'tpope/vim-fugitive'
+
 NeoBundleLazy 'cespare/zenburn'
+NeoBundle 'itchyny/lightline.vim'
 
 call neobundle#end()
 
@@ -38,3 +41,25 @@ set incsearch
 set ignorecase
 set t_Co=256
 colors zenburn
+" powerline
+set laststatus=2
+set noshowmode
+let g:lightline = {
+	\ 'colorscheme': 'wombat',
+	\ 'active': {
+	\   'left': [ [ 'mode' ], [ 'filename', 'fugitive' ] ]
+	\ },
+	\ 'component_function': {
+      	\   'fugitive': 'MyFugitive',
+      	\ },
+	\ 'separator': { 'left': "\ue0b0", 'right': "\ue0b2" },
+      	\ 'subseparator': { 'left': "\ue0b1", 'right': "\ue0b3" }
+	\ }
+
+function! MyFugitive()
+  if &ft !~? 'vimfiler\|gundo' && exists("*fugitive#head")
+    let _ = fugitive#head()
+    return strlen(_) ? "\ue0a0".' '._ : ''
+  endif
+  return ''
+endfunction
