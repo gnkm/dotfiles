@@ -28,5 +28,8 @@
 ;; 小文字の後の大文字を単語境界とする
 (add-to-list 'word-separating-categories (cons ?M ?U))
 
+;; ビープ音を無効に
+(setq ring-bell-function 'ignore)
+
 ;; save 前に行末空白文字を削除する
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
