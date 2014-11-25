@@ -1,10 +1,4 @@
-" SoftwareDesign 2013/10 参照
-
-set number
-set nohlsearch
-set incsearch
-set ignorecase
-
+" ===== NeoBundle =====
 " vim 起動時のみ runtimepath に neobundle.vim を追加
 if has('vim_starting')
 	set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -15,6 +9,8 @@ call neobundle#begin(expand('~/.vim/bundle'))
 
 " neobundle.vim を更新するための設定
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+NeoBundleLazy 'cespare/zenburn'
 
 NeoBundleLazy 'Shougo/unite.vim', {
 	      \ 'depends': [
@@ -34,3 +30,11 @@ call neobundle#end()
 
 " 読み込んだプラグインも含め、ファイルタイプの検出、ファイルタイプ別プラグイン・インデントを有効化する
 filetype plugin indent on
+
+" ===== appearances =====
+set number
+set nohlsearch
+set incsearch
+set ignorecase
+set t_Co=256
+colors zenburn
