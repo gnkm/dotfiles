@@ -1,5 +1,6 @@
 emacs/.cask
 emacs/elpa
 emacs/session*
+emacs/tramp
 emacs/vendor/*
 !emacs/vendor/.gitkeep
