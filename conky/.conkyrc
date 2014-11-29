@@ -23,21 +23,29 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
+# 表示位置
 alignment top_left
-background no
+gap_x 10
+gap_y 40
+# font
+override_utf8_locale yes
+use_xft yes
+xftfont Ricty for Powerline:size=12
+
+background yes
 border_width 1
 cpu_avg_samples 2
 default_color white
 default_outline_color white
 default_shade_color white
+double_buffer yes
 draw_borders no
 draw_graph_borders yes
 draw_outline no
 draw_shades no
 use_xft yes
-xftfont DejaVu Sans Mono:size=12
-gap_x 5
-gap_y 60
+
+maximum_width 500
 minimum_size 5 5
 net_avg_samples 2
 no_buffers yes
@@ -45,7 +53,9 @@ out_to_console no
 out_to_stderr no
 extra_newline no
 own_window yes
+own_window_argb_visual true
 own_window_class Conky
+own_window_transparent yes
 own_window_type desktop
 stippled_borders 0
 update_interval 1.0
@@ -55,10 +65,6 @@ show_graph_scale no
 show_graph_range no
 
 TEXT
-${scroll 16 $nodename - $sysname $kernel on $machine | }
-$hr
-${color grey}Uptime:$color $uptime
-${color grey}Frequency (in MHz):$color $freq
 ${color grey}Frequency (in GHz):$color $freq_g
 ${color grey}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
 ${color grey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 4}
