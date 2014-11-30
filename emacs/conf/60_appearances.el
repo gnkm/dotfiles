@@ -11,10 +11,8 @@
 (crosshairs-mode 1)
 ;; ediff 関連のバッファを 1つのフレームにまとめる
 (setq ediff-window-setup-function 'ediff-setup-window-plain)
-;; font
-(set-face-attribute 'default nil
-		    :family "Ricty"
-		    :height 110)
+;; font => サブプラットフォームごとに設定
+
 ;; ダイアログボックスを使わない
 (setq use-dialog-box nil)
 
