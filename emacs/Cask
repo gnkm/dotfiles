@@ -1,5 +1,6 @@
 (source melpa)
 
+(depends-on "ag")
 (depends-on "crosshairs")
 (depends-on "esup")
 (depends-on "flymake-yaml")
