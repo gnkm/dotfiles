@@ -13,5 +13,6 @@
 (depends-on "powerline")
 (depends-on "twittering-mode")
 (depends-on "vimrc-mode")
+(depends-on "wgrep-ag")
 (depends-on "yaml-mode")
 (depends-on "zenburn-theme")
