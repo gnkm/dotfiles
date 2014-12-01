@@ -6,6 +6,8 @@
 (setq linum-format "%4d")
 ;; 対応する括弧を表示
 (show-paren-mode t)
+;; 現在行の色
+(set-face-background 'hl-line "DarkSlateGrey")
 ;; 現在行と桁をハイライト
 (require 'crosshairs)
 (crosshairs-mode 1)
