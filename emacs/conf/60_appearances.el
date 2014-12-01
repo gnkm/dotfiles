@@ -8,11 +8,13 @@
 (show-paren-mode t)
 ;; カーソルの点滅をやめる
 (blink-cursor-mode 0)
-;; 現在行の色
-(set-face-background 'hl-line "DarkSlateGrey")
+
 ;; 現在行と桁をハイライト
 (require 'crosshairs)
 (crosshairs-mode 1)
+(set-face-background 'hl-line "dim gray")
+(set-face-background 'col-highlight "dim gray")
+
 ;; ediff 関連のバッファを 1つのフレームにまとめる
 (setq ediff-window-setup-function 'ediff-setup-window-plain)
 ;; font => サブプラットフォームごとに設定
