@@ -12,3 +12,6 @@
 (global-set-key (kbd "C-c h o") 'helm-occur)
 (global-set-key (kbd "C-c h g") 'helm-google-suggest)
 (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
+
+;; helm-ag
+(setq helm-ag-base-command "ag --nocolor --nogroup --ignore-case")

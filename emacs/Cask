@@ -6,6 +6,7 @@
 (depends-on "flymake-yaml")
 (depends-on "haskell-mode")
 (depends-on "helm")
+(depends-on "helm-ag")
 (depends-on "init-loader")
 (depends-on "magit")
 (depends-on "pallet")
