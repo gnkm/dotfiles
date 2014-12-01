@@ -6,6 +6,8 @@
 (setq linum-format "%4d")
 ;; 対応する括弧を表示
 (show-paren-mode t)
+;; カーソルの点滅をやめる
+(blink-cursor-mode 0)
 ;; 現在行の色
 (set-face-background 'hl-line "DarkSlateGrey")
 ;; 現在行と桁をハイライト
