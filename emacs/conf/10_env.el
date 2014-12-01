@@ -1,18 +1,6 @@
 ;; スタートアップページを表示しない
 (setq inhibit-startup-message t)
 
-;; バッファ切り替えを強化する
-(iswitchb-mode 1)
-
-;; バッファ読取関数を iswitchb にする
-(setq read-buffer-function 'iswitchb-read-buffer)
-
-;; 部分文字列のかわりに正規表現を使う場合には t にする
-(setq iswitchb-regexp nil)
-
-;; 新しいバッファを作成するときにいちいち聞いてこない
-(setq iswitchb-prompt-newbuffer nil)
-
 ;;矩形編集を使えるようにする
 (cua-mode t)			;cua-modeオン
 (setq cua-enable-cua-keys nil)	;CUAキーバインドを無効にする
