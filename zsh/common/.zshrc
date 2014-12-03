@@ -1,5 +1,5 @@
 # ===== antigen =====
-source $HOME/vendor/antigen/antigen.zsh
+source $HOME/vendor/apps/antigen/antigen.zsh
 
 ZSH_DIR=$HOME/.zsh
 COMMON_ANTIGEN_FILENAME=common-antigen
