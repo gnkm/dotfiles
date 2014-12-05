@@ -4,3 +4,7 @@ COREUTILS_ALIASES_FILE=$ZSH_DIR/$COREUTILS_ALIASES_FILENAME
 if [ -s $COREUTILS_ALIASES_FILE ]; then
     source $COREUTILS_ALIASES_FILE
 fi
+
+alias ls='gls --color=auto'
+alias ll='ls -lB'
+alias la='ls -la'
