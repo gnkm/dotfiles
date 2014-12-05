@@ -7,4 +7,6 @@ alias dec='openssl -d -aes256'
 # 暗号化
 alias enc='openssl -e -aes256'
 alias s='source ~/.zshrc'
+alias tm='tmux'
+alias tmns='tmux new -s $1'
 alias va='vagrant'
