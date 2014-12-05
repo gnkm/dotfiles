@@ -1,22 +1,10 @@
-alias cjs='casperjs'
 alias gpw='cat /dev/urandom | LC_CTYPE=C tr -dc "[:alnum:]" | head -c 8'
 alias grf='cat /dev/urandom | LC_CTYPE=C tr -dc "[:alnum:]" | head -c 16 | xargs touch'
-alias ppp='cd ../'
-alias cl='clear'				# C-lに同じ
-alias sjs='js'
 # opensslの仕様可能なもののリスト表示
 alias osl='openssl ciphers ALL:@STRENGTH -v'
 # 復号化．-in, -out は自分で与える．
 alias dec='openssl -d -aes256'
 # 暗号化
 alias enc='openssl -e -aes256'
-alias pjs='phantomjs'
-alias uuu='popd'					# ppp の undo として
-alias sc='source'
 alias s='source ~/.zshrc'
-# a: print hidden file
-# l: print symbolic link
-# C: colorize
-# L: depth
-alias t='tree -alCL'
 alias va='vagrant'
