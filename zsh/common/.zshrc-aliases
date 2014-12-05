@@ -1,6 +1,6 @@
 alias gpw='cat /dev/urandom | LC_CTYPE=C tr -dc "[:alnum:]" | head -c 8'
 alias grf='cat /dev/urandom | LC_CTYPE=C tr -dc "[:alnum:]" | head -c 16 | xargs touch'
-# opensslの仕様可能なもののリスト表示
+# opensslの使用可能なもののリスト表示
 alias osl='openssl ciphers ALL:@STRENGTH -v'
 # 復号化．-in, -out は自分で与える．
 alias dec='openssl -d -aes256'
