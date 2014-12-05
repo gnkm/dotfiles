@@ -58,6 +58,14 @@ if [ -s ~/.dircolors ]; then
     fi
 fi
 
+# 関数ファイルをロードする
+COMMON_FUNCTIONS_FILENAME=common-functions
+COMMON_FUNCTIONS_FILE=$ZSH_DIR/$COMMON_FUNCTIONS_FILENAME
+
+if [ -s $COMMON_FUNCTIONS_FILE ]; then
+    source $COMMON_FUNCTIONS_FILE
+fi
+
 # エイリアスファイルをロードする
 COMMON_ALIASES_FILENAME=common-aliases
 COMMON_ALIASES_FILE=$ZSH_DIR/$COMMON_ALIASES_FILENAME

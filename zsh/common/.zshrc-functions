@@ -1,1 +1,3 @@
-
+function tmux-new-session-window() {
+    tmux new -s $1 \; rename-window $2
+}
