@@ -8,6 +8,12 @@
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; yasnippet
+(require 'yasnippet)
+(setq yas-snippet-dirs
+      '("~/.emacs.d/my-snippets"))
+(yas-global-mode 1)
+
 ;; startup profiler
 (eval-after-load 'esup
   '(progn
