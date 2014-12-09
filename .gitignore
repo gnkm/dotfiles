@@ -1,5 +1,6 @@
 emacs/.cask
 emacs/elpa
+emacs/quelpa
 emacs/recentf
 emacs/session*
 emacs/tramp
