@@ -5,4 +5,4 @@ emacs/recentf
 emacs/session*
 emacs/tramp
 emacs/vendor/*
-!emacs/vendor/.gitkeep
+!emacs/vendor/list
