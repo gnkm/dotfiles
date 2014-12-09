@@ -1,5 +1,19 @@
 # Dotfiles for Emacs
 
+## Requirement
+
+### Cask
+
+    # install Cask
+    ## Mac
+    $ brew install cask
+    ## other
+    $ curl -fsSkL https://raw.github.com/cask/cask/master/go | python
+
+    # install packages
+    $ cd ~/.emacs.d/
+    $ cask install
+
 ## Directories
 
     .
