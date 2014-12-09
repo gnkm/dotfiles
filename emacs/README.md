@@ -1,11 +1,11 @@
-# What's this?
+# Dotfiles for Emacs
 
-Dotfiles for Emacs
-
-# Directories
+## Directories
 
     .
-    ├── conf             : detailed configulations
-    ├── elisp            : elisps
-    ├── elpa             : extensions installed with package management system (ignored)
-    └── public_repos     : extensions installed with OTHER THAN package management system
+    ├── conf                : detailed configulations
+    ├── elisp               : elisps
+    ├── elpa                : extensions installed with package management system (ignored)
+    ├── insert-templates    : templates
+    ├── my-snippets         : snippets for yasnippet
+    └── vendor              : extensions installed with OTHER THAN package management system
