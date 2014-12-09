@@ -3,6 +3,7 @@
 (depends-on "ag")
 (depends-on "crosshairs")
 (depends-on "esup")
+(depends-on "exec-path-from-shell")
 (depends-on "flycheck")
 (depends-on "flymake-yaml")
 (depends-on "haskell-mode")

@@ -1,6 +1,9 @@
 ;; スタートアップページを表示しない
 (setq inhibit-startup-message t)
 
+;; use same PATH in .zshrc
+(exec-path-from-shell-initialize)
+
 ;;矩形編集を使えるようにする
 (cua-mode t)			;cua-modeオン
 (setq cua-enable-cua-keys nil)	;CUAキーバインドを無効にする
