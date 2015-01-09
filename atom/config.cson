@@ -16,3 +16,9 @@
     'userId': 'e5758d35-740f-4a0e-11aa-ec10e6fcab4d'
   'welcome':
     'showOnStartup': false
+  'emacs-mode':
+    'hideTabs': false
+    'hideSidebar': false
+    'useEmacsCursor': true
+    'useFuzzyFileFinder': false
+    'useFuzzyBufferFinder': false

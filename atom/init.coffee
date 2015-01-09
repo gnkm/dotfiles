@@ -9,3 +9,5 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
+atom.packages.activatePackage 'emacs-mode'
