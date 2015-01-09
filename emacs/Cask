@@ -10,6 +10,7 @@
 (depends-on "helm")
 (depends-on "helm-ag")
 (depends-on "init-loader")
+(depends-on "lua-mode")
 (depends-on "magit")
 (depends-on "pallet")
 (depends-on "powerline")
