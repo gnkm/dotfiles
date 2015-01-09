@@ -1,0 +1,18 @@
+'*':
+  'editor':
+    'fontFamily': 'RictyDiscord-Regular'
+    'showInvisibles': true
+    'showIndentGuide': true
+    'invisibles': {}
+  'core':
+    'followSymlinks': true
+    'themes': [
+      'atom-dark-ui'
+      'zenburn'
+    ]
+    'projectHome': '~/projects'
+    'audioBeep': false
+  'exception-reporting':
+    'userId': 'e5758d35-740f-4a0e-11aa-ec10e6fcab4d'
+  'welcome':
+    'showOnStartup': false
