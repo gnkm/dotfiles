@@ -12,6 +12,7 @@
 (depends-on "init-loader")
 (depends-on "lua-mode")
 (depends-on "magit")
+(depends-on "markdown-mode")
 (depends-on "pallet")
 (depends-on "powerline")
 (depends-on "twittering-mode")
