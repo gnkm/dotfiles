@@ -58,6 +58,9 @@ if [ -s ~/.dircolors ]; then
     fi
 fi
 
+# rbenv
+eval "$(rbenv init -)"
+
 # 関数ファイルをロードする
 COMMON_FUNCTIONS_FILENAME=common-functions
 COMMON_FUNCTIONS_FILE=$ZSH_DIR/$COMMON_FUNCTIONS_FILENAME
