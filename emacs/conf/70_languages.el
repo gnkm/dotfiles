@@ -1,3 +1,6 @@
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode)
+
 ;; markdown
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))

@@ -2,6 +2,7 @@
 
 (depends-on "ag")
 (depends-on "crosshairs")
+(depends-on "emmet-mode")
 (depends-on "esup")
 (depends-on "exec-path-from-shell")
 (depends-on "flycheck")
