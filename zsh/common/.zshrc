@@ -14,9 +14,7 @@ fi
 export PATH=$HOME/bin:$HOME/.cask/bin:$PATH
 
 # プロンプト
-TRIANGLE=$(echo -e "\ue0b0")
-export PS1="%K{green}%F{black}[%*]%f%k%K{blue}%F{green}${TRIANGLE}%f%d %#%k%F{blue}${TRIANGLE}%f "
-
+export PS1='%F{magenta}[%*] %f%F{cyan}%d %f%F{green}%#%f '
 # 補完機能を有効にする
 autoload -Uz compinit
 compinit
