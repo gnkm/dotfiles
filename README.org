@@ -1,5 +1,6 @@
 #+TITLE: Dotfiles
 #+STARTUP: content
+#+OPTIONS: TOC:nil
 
 * Dotfiles
 
