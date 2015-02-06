@@ -1,0 +1,10 @@
+#+TITLE: Dotfiles
+#+STARTUP: content
+
+* Dotfiles
+
+** Installation
+
+#+BEGIN_SRC sh
+  $ ./setup.sh {{ os }}
+#+END_SRC
