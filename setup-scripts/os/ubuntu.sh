@@ -1,4 +1,5 @@
 #! /usr/bin/env bash
 
-# @TODO implement
-echo 'install apps on ubuntu'
+$HOME/.dotfiles/setup-scripts/apps/emacs.sh
+$HOME/.dotfiles/setup-scripts/apps/git.sh
+$HOME/.dotfiles/setup-scripts/apps/zsh.sh ubuntu
