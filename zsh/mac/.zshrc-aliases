@@ -8,3 +8,4 @@ fi
 alias ls='gls --color=auto'
 alias ll='ls -lB'
 alias la='ls -la'
+alias sed='gsed'
