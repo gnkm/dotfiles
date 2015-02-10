@@ -24,3 +24,7 @@
 
 ;; save 前に行末空白文字を削除する
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+;; SKK 設定ファイルディレクトリ
+(setq skk-user-directory "~/.emacs.d/skk")
+(setq skk-init-file (concat skk-user-directory "/init.el"))

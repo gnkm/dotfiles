@@ -4,6 +4,8 @@ emacs/elpa
 emacs/quelpa
 emacs/recentf
 emacs/session*
+emacs/skk/*
+!emacs/skk/init.el
 emacs/tramp
 emacs/vendor/*
 !emacs/vendor/list
