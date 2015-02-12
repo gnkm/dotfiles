@@ -63,7 +63,9 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
 fi
 
 # rbenv
-eval "$(rbenv init -)"
+if [ -f /usr/local/bin/rbenv ]; then
+    eval "$(rbenv init -)"
+fi
 
 # 関数ファイルをロードする
 COMMON_FUNCTIONS_FILENAME=common-functions
