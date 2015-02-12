@@ -56,6 +56,12 @@ if [ -s ~/.dircolors ]; then
     fi
 fi
 
+# virtualenvwrapper
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME=$HOME/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
 # rbenv
 eval "$(rbenv init -)"
 
