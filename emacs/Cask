@@ -1,7 +1,8 @@
-(source melpa)
 (source gnu)
+(source melpa)
 
 (depends-on "ag")
+(depends-on "arduino-mode")
 (depends-on "crosshairs")
 (depends-on "emmet-mode")
 (depends-on "esup")
