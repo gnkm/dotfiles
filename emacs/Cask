@@ -18,6 +18,7 @@
 (depends-on "markdown-mode")
 (depends-on "pallet")
 (depends-on "powerline")
+(depends-on "quickrun")
 (depends-on "twittering-mode")
 (depends-on "vimrc-mode")
 (depends-on "wgrep-ag")
