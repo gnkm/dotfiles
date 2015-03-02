@@ -11,7 +11,7 @@ fi
 
 # ===== original config =====
 
-export PATH=$HOME/bin:$HOME/.cask/bin:$PATH
+export PATH=$HOME/.cask/bin:$PATH
 
 # プロンプト
 export PS1='%F{magenta}[%*] %f%F{cyan}%d %f%F{green}%#%f '
