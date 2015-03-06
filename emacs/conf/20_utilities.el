@@ -14,6 +14,7 @@
       '("~/.emacs.d/my-snippets"))
 (yas-global-mode 1)
 
+(put 'narrow-to-region 'disabled nil)
 ;; startup profiler
 (eval-after-load 'esup
   '(progn

@@ -11,7 +11,7 @@ fi
 
 # ===== original config =====
 
-export PATH=$HOME/bin:$HOME/.cask/bin:$PATH
+export PATH=$HOME/.cask/bin:$PATH
 
 # プロンプト
 export PS1='%F{magenta}[%*] %f%F{cyan}%d %f%F{green}%#%f '
@@ -56,8 +56,17 @@ if [ -s ~/.dircolors ]; then
     fi
 fi
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+# pyenv-virtualenv
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 # rbenv
-eval "$(rbenv init -)"
+if [ -f /usr/local/bin/rbenv ]; then
+    eval "$(rbenv init -)"
+fi
 
 # 関数ファイルをロードする
 COMMON_FUNCTIONS_FILENAME=common-functions
