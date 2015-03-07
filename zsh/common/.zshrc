@@ -14,7 +14,7 @@ fi
 export PATH=$HOME/.cask/bin:$PATH
 
 # プロンプト
-export PS1='%F{magenta}[%*] %f%F{cyan}%d %f%F{green}%#%f '
+export PS1='%F{yellow}@%m %f%F{white}/ %f%F{magenta}%* %f%F{white}/ %f%F{cyan}%3~ %f%F{green}%#%f '
 # 補完機能を有効にする
 autoload -Uz compinit
 compinit
