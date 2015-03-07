@@ -15,6 +15,9 @@
 (set-face-background 'hl-line "dim gray")
 (set-face-background 'col-highlight "dim gray")
 
+;; 折り返し表示する
+(setq truncate-lines t)
+
 ;; ediff 関連のバッファを 1つのフレームにまとめる
 (setq ediff-window-setup-function 'ediff-setup-window-plain)
 ;; font => サブプラットフォームごとに設定
