@@ -56,6 +56,9 @@ if [ -s ~/.dircolors ]; then
     fi
 fi
 
+# zmv を使えるようにする
+autoload -Uz zmv
+
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
