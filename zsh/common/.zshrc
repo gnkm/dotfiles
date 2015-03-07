@@ -14,7 +14,21 @@ fi
 export PATH=$HOME/.cask/bin:$PATH
 
 # プロンプト
-export PS1='%F{yellow}@%m %f%F{white}/ %f%F{magenta}%* %f%F{white}/ %f%F{cyan}%3~ %f%F{green}%#%f '
+setopt prompt_subst
+
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' actionformats \
+       '%F{yellow}[%b %c%u%f|%F{1}%a]%f'
+zstyle ':vcs_info:git:*' formats       \
+       '%F{yellow}[%b %c%u]%f'
+zstyle ':vcs_info:git:*' branchformat '%b'
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr '+'
+zstyle ':vcs_info:git:*' unstagedstr 'X'
+precmd () { vcs_info }
+export PS1='%F{magenta}@%m %f%F{cyan}%3~ %f${vcs_info_msg_0_} %F{green}%#%f '
+
 # 補完機能を有効にする
 autoload -Uz compinit
 compinit
