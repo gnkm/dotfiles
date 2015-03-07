@@ -25,9 +25,11 @@ zstyle ':vcs_info:git:*' formats       \
 zstyle ':vcs_info:git:*' branchformat '%b'
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr '+'
-zstyle ':vcs_info:git:*' unstagedstr 'X'
+zstyle ':vcs_info:git:*' unstagedstr 'x'
 precmd () { vcs_info }
-export PS1='%F{magenta}@%m %f%F{cyan}%3~ %f${vcs_info_msg_0_} %F{green}%#%f '
+local p_dir="%F{cyan}%3~ %f${vcs_info_msg_0_}"$'\n'
+local p_host="%F{magenta}@%m %f%F{green}%#%f "
+export PS1=${p_dir}${p_host}
 
 # 補完機能を有効にする
 autoload -Uz compinit
