@@ -17,7 +17,7 @@
 
 [color "status"]
 
-	header		= yellow				# the header text of the status message
+	header		= white				# the header text of the status message
 	updated		= cyan				# files which are added but not committed
 	changed		= magenta				# files which are changed but not added in the index
 	untracked	= green				# files which are not tracked by Git
