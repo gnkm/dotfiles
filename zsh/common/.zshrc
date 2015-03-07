@@ -19,7 +19,7 @@ setopt prompt_subst
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git:*' actionformats \
-       '%F{yellow}[%b %c%u%f|%F{1}%a]%f'
+       '%F{yellow}[%b %c%u%f|%F{1}%a%f%F{yellow}]%f'
 zstyle ':vcs_info:git:*' formats       \
        '%F{yellow}[%b %c%u]%f'
 zstyle ':vcs_info:git:*' branchformat '%b'
