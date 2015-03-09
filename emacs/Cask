@@ -16,6 +16,7 @@
 (depends-on "lua-mode")
 (depends-on "magit")
 (depends-on "markdown-mode")
+(depends-on "org" "20150302")
 (depends-on "pallet")
 (depends-on "powerline")
 (depends-on "quickrun")
