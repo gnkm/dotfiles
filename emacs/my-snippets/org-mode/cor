@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cor
+# key: <cor
+# --
+#+BEGIN_COR*
+$0
+#+END_COR*
