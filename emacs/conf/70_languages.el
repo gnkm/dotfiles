@@ -1,3 +1,9 @@
+;; Language configurations
+
+;; coffee-mode
+(require 'coffee-mode)
+(custom-set-variables '(coffee-tab-width 2))
+
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode)
 
