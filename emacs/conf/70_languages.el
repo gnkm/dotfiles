@@ -12,6 +12,9 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; python
+(define-auto-insert "\\.py" "python-template.py")
+
 ;; Shell script
 (define-auto-insert "\\.sh" "bash-template.sh")
 
