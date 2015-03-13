@@ -12,7 +12,11 @@ ln -s $HOME/.dotfiles/zsh/common/.zshrc-aliases $ZSH_DIR/common-aliases
 ln -s $HOME/.dotfiles/zsh/common/.zshrc-antigen $ZSH_DIR/common-antigen
 ln -s $HOME/.dotfiles/zsh/common/.zshrc-functions $ZSH_DIR/common-functions
 
-if [ $OS = 'mac' ]; then
+if [[ -s $HOME/.dotfiles/zsh/$OS/.zshrc ]]; then
+    ln -s $HOME/.dotfiles/zsh/$OS/.zshrc $ZSH_DIR/os-specific-zshrc
+fi
+
+if [[ $OS = 'mac' ]]; then
     ln -s $HOME/.dotfiles/zsh/$OS/.zshrc-aliases-coreutils $ZSH_DIR/coreutils-aliases
 fi
 
