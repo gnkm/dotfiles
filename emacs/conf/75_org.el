@@ -1,4 +1,9 @@
-;; Tex
+;;; 75_org.el --- for org mode
+
+;;; Commentary:
+;; settigs for org mode
+
+;; latex export
 (require 'ox-latex)
 ;; for org < 8
 ;; http://orgmode.org/worg/org-tutorials/org-latex-export.html
@@ -14,3 +19,6 @@
 ("\\section{%s}" . "\\section*{%s}")
 ("\\subsection{%s}" . "\\subsection*{%s}")
 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")))
+;; ^, _ の変換を明示的に行う
+(setq org-export-with-sub-superscripts '{})
+;;; 75_org.el ends here
