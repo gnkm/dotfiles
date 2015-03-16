@@ -1,4 +1,9 @@
-;; Language configurations
+;;; 70_languages.el --- Language configurations
+
+;;; Commentary:
+;; 各種言語の設定
+
+;;; Code:
 
 ;; coffee-mode
 (require 'coffee-mode)
@@ -18,6 +23,19 @@
 ;; Shell script
 (define-auto-insert "\\.sh" "bash-template.sh")
 
+;; web-mode
+;; 参考：http://web-mode.org/
+(require 'web-mode)
+(defun my-web-mode-hook ()
+  "Hooks for Web mode."
+  ;; indentation
+  (setq web-mode-markup-indent-offset 2) ; for html
+  (setq web-mode-code-indent-offset 4)	 ; for js, PHP etc
+  )
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
+
+
 ;; yatex
 (when (locate-library "yatex")
   (add-to-list 'auto-mode-alist '("\\.tex$" . yatex-mode))
@@ -27,3 +45,4 @@
   (setq tex-command "platex")
   (setq dvi2-command "evince")
   (setq tex-pdfview-command "evince"))
+;;; 70_languages.el ends here
