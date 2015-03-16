@@ -17,6 +17,12 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+;; php
+;; 参考：http://www.emacswiki.org/emacs/PhpMode
+(autoload 'php-mode "php-mode" "Major mode for editing php code." t)
+(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+(add-to-list 'auto-mode-alist '("\\.inc$" . php-mode))
+
 ;; python
 (define-auto-insert "\\.py" "python-template.py")
 
