@@ -78,6 +78,8 @@ fi
 # zmv を使えるようにする
 autoload -Uz zmv
 
+# 各言語バージョン管理ツール設定
+
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -90,9 +92,12 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # rbenv
-if [ -f /usr/local/bin/rbenv ]; then
-    eval "$(rbenv init -)"
-fi
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# phpenv
+# 内部で rbenv を使用しているので rbenv の設定より後に記述のこと
+export PATH="$HOME/.phpenv/bin:$PATH"
+if which phpenv > /dev/null; then eval "$(phpenv init -)"; fi
 
 # 関数ファイルをロードする
 COMMON_FUNCTIONS_FILENAME=common-functions
