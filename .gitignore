@@ -1,3 +1,4 @@
+atom/.apm/*
 atom/packages/*
 atom/projects.cson
 emacs/.cask
