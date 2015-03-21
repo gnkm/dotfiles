@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: src-hs
+# key: <shs
+# --
+#+BEGIN_SRC haskell
+$0
+#+END_SRC
