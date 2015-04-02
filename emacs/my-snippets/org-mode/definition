@@ -2,6 +2,6 @@
 # name: definition
 # key: <def
 # --
-#+BEGIN_DEFINITION*
+#+BEGIN_DEFINITION
 $0
-#+END_DEFINITION*
+#+END_DEFINITION
