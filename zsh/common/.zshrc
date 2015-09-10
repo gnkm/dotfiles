@@ -99,6 +99,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.phpenv/bin:$PATH"
 if which phpenv > /dev/null; then eval "$(phpenv init -)"; fi
 
+# commands installed with cabal
+if [ -d $HOME/.cabal/bin ]; then
+    PATH="$HOME/.cabal/bin:$PATH"
+fi
+
 # 関数ファイルをロードする
 COMMON_FUNCTIONS_FILENAME=common-functions
 COMMON_FUNCTIONS_FILE=$ZSH_DIR/$COMMON_FUNCTIONS_FILENAME
