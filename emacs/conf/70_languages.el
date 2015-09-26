@@ -12,6 +12,10 @@
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode)
 
+;; dockerfile
+(require 'dockerfile-mode)
+(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+
 ;; haskell
 (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 ;; (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)

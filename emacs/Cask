@@ -8,6 +8,7 @@
 (depends-on "col-highlight")
 (depends-on "crosshairs")
 (depends-on "dash")
+(depends-on "dockerfile-mode")
 (depends-on "emmet-mode")
 (depends-on "esup")
 (depends-on "exec-path-from-shell")
