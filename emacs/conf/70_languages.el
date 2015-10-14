@@ -20,6 +20,14 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-simple-indent)
 ;; (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 
+;; js
+(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(custom-set-variables
+ '(js2-basic-offset 2)
+ '(js2-bounce-indent-p t)
+ )
+
 ;; markdown
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
