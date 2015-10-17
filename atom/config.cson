@@ -7,8 +7,8 @@
   core:
     followSymlinks: true
     themes: [
-      "atom-dark-ui"
-      "zenburn"
+      "atom-light-ui"
+      "zenburn-theme"
     ]
     projectHome: "~/projects"
     audioBeep: false
