@@ -1,9 +1,9 @@
 "*":
   editor:
-    fontFamily: "RictyDiscord-Regular"
     showInvisibles: true
     showIndentGuide: true
     invisibles: {}
+    fontFamily: "Ricty Discord for Powerline"
   core:
     followSymlinks: true
     themes: [
