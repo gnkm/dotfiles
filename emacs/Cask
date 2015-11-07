@@ -38,6 +38,7 @@
 (depends-on "powerline")
 (depends-on "quickrun")
 (depends-on "twittering-mode")
+(depends-on "undo-tree")
 (depends-on "vimrc-mode")
 (depends-on "web-mode")
 (depends-on "wgrep-ag")

@@ -8,6 +8,10 @@
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; undo-tree
+(require 'undo-tree)
+(global-undo-tree-mode t)
+
 ;; yasnippet
 (require 'yasnippet)
 (setq yas-snippet-dirs
