@@ -1,3 +1,10 @@
+;;; 10_env.el --- environment variables configurations
+
+;;; Commentary:
+;; environment variables configurations
+
+;;; Code:
+
 ;; スタートアップページを表示しない
 (setq inhibit-startup-message t)
 
@@ -28,3 +35,5 @@
 ;; SKK 設定ファイルディレクトリ
 (setq skk-user-directory "~/.emacs.d/skk")
 (setq skk-init-file (concat skk-user-directory "/init.el"))
+
+;;; 10_env.el ends here

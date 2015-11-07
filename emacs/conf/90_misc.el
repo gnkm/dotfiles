@@ -1,3 +1,10 @@
+;;; 90_misc.el --- miscellaneous configurations
+
+;;; Commentary:
+;; miscellaneous configurations
+
+;;; Code:
+
 ;; ;; twittering mode
 (use-package twittering-mode
   :commands (twit)
@@ -7,3 +14,5 @@
   (setq twittering-icon-mode t)	; Show icons
   (setq twittering-timer-interval (* 5 60)) ; Update timeline each 5 minutes
   )
+
+;;; 90_misc.el ends here

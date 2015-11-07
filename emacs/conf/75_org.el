@@ -21,4 +21,5 @@
 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")))
 ;; ^, _ の変換を明示的に行う
 (setq org-export-with-sub-superscripts '{})
+
 ;;; 75_org.el ends here

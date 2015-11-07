@@ -1,3 +1,10 @@
+;;; 60_appearances.el --- appearances configurations
+
+;;; Commentary:
+;; appearances configurations
+
+;;; Code:
+
 ;;; ===== メインバッファ =====
 (load-theme 'zenburn t)
 
@@ -37,3 +44,5 @@
 (menu-bar-mode 0)
 ;; ツールバー非表示
 (tool-bar-mode 0)
+
+;;; 60_appearances.el ends here

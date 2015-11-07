@@ -1,3 +1,11 @@
+;;; 30_helm.el --- helm configurations
+
+;;; Commentary:
+;; helm configurations
+
+;;; Code:
+
+
 ;; http://tuhdo.github.io/helm-intro.html
 (use-package helm-config)
 (helm-mode 1)
@@ -15,3 +23,5 @@
 
 ;; helm-ag
 (setq helm-ag-base-command "ag --nocolor --nogroup --ignore-case")
+
+;;; 30_helm.el ends here

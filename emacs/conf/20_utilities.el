@@ -1,5 +1,9 @@
-;; C-k で行末の改行文字も削除する
-;; (setq kill-whole-line t)
+;;; 20_utilities.el --- utilities configurations
+
+;;; Commentary:
+;; loads utilities
+
+;;; Code:
 
 ;; auto-insert
 (auto-insert-mode)
@@ -25,3 +29,5 @@
 (eval-after-load 'esup
   '(progn
      (use-package esup)))
+
+;;; 20_utilities.el ends here

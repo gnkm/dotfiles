@@ -1,3 +1,10 @@
+;;; init.el --- config file for emacs
+
+;;; Commentary:
+;; settigs for Emacs
+
+;;; Code:
+
 (setq gc-cons-threshold (* 256 1024 1024))
 
 (require 'cl)
@@ -17,3 +24,5 @@
 (use-package init-loader
   :config
   (init-loader-load "~/.emacs.d/conf"))
+
+;;; init.el ends here
