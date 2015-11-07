@@ -9,6 +9,13 @@
 (auto-insert-mode)
 (setq auto-insert-directory "~/.emacs.d/insert-templates/")
 
+;; ddskk
+(use-package skk
+  :config
+  (global-set-key "\C-x\C-j" 'skk-mode)
+  (setq skk-use-azik t)
+  (setq skk-tut-file "~/Documents/ddskk/SKK.tut"))
+
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
