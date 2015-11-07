@@ -5,6 +5,9 @@
 
 ;;; Code:
 
+;; for editing config files
+(use-package generic-x)
+
 ;; coffee-mode
 (use-package coffee-mode
   :config
