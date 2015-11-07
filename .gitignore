@@ -3,6 +3,7 @@ atom/packages/*
 atom/projects.cson
 emacs/.cask
 emacs/elpa
+emacs/kkcrc
 emacs/quelpa
 emacs/recentf
 emacs/session*
