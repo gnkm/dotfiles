@@ -12,6 +12,11 @@
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; smartparens
+(use-package smartparens
+  :config
+  (smartparens-global-mode t))
+
 ;; undo-tree
 (use-package undo-tree
   :config
