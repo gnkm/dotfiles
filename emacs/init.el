@@ -7,9 +7,15 @@
 (require 'pallet)
 (pallet-mode t)
 
+(require 'use-package)
+
 ;; add-to-load-path を使えるように
-(add-to-list 'load-path "~/.emacs.d/elisp")
-(require 'add-to-load-path)
+(use-package add-to-load-path
+	     :load-path "elisp")
+
+
+;; (add-to-list 'load-path "~/.emacs.d/elisp")
+;; (require 'add-to-load-path)
 (add-to-load-path "vendor")
 
 ;; init-loader
