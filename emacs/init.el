@@ -7,7 +7,7 @@
 
 (setq gc-cons-threshold (* 256 1024 1024))
 
-(require 'cl)
+(require 'cl-lib)
 
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
