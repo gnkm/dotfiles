@@ -18,6 +18,7 @@
 (depends-on "flymake-yaml")
 (depends-on "git-commit")
 (depends-on "git-rebase-mode")
+(depends-on "gitignore-mode")
 (depends-on "haskell-mode")
 (depends-on "helm")
 (depends-on "helm-ag")
