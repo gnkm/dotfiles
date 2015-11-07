@@ -9,17 +9,19 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; undo-tree
-(require 'undo-tree)
-(global-undo-tree-mode t)
+(use-package undo-tree
+  :config
+  (global-undo-tree-mode t))
 
 ;; yasnippet
-(require 'yasnippet)
-(setq yas-snippet-dirs
-      '("~/.emacs.d/my-snippets"))
-(yas-global-mode 1)
+(use-package yasnippet
+  :config
+  (setq yas-snippet-dirs
+	'("~/.emacs.d/my-snippets"))
+  (yas-global-mode 1))
 
 (put 'narrow-to-region 'disabled nil)
 ;; startup profiler
 (eval-after-load 'esup
   '(progn
-     (require 'esup)))
+     (use-package esup)))

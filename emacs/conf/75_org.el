@@ -4,7 +4,7 @@
 ;; settigs for org mode
 
 ;; latex export
-(require 'ox-latex)
+(use-package ox-latex)
 ;; for org < 8
 ;; http://orgmode.org/worg/org-tutorials/org-latex-export.html
 (unless (boundp 'org-latex-classes)

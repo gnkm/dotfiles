@@ -10,10 +10,11 @@
 (blink-cursor-mode 0)
 
 ;; 現在行と桁をハイライト
-(require 'crosshairs)
-(crosshairs-mode 1)
-(set-face-background 'hl-line "dim gray")
-(set-face-background 'col-highlight "dim gray")
+(use-package crosshairs
+  :config
+  (crosshairs-mode 1)
+  (set-face-background 'hl-line "dim gray")
+  (set-face-background 'col-highlight "dim gray"))
 
 ;; 折り返し表示する
 (setq truncate-lines t)

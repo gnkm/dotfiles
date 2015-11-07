@@ -1,5 +1,5 @@
 ;; http://tuhdo.github.io/helm-intro.html
-(require 'helm-config)
+(use-package helm-config)
 (helm-mode 1)
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
 (define-key helm-map (kbd "C-i") 'helm-execute-persistent-action) ; make TAB works in terminal

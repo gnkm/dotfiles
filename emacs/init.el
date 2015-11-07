@@ -14,5 +14,6 @@
 	     :load-path "elisp")
 
 ;; init-loader
-(require 'init-loader)
-(init-loader-load "~/.emacs.d/conf")
+(use-package init-loader
+  :config
+  (init-loader-load "~/.emacs.d/conf"))
