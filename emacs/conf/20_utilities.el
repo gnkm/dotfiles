@@ -16,8 +16,9 @@
   (global-set-key "\C-\\" 'skk-mode)
   (setq skk-use-azik t)
   (setq-default skk-kutouten-type 'en)
-  (setq skk-tut-file "~/Documents/ddskk/SKK.tut")
-  (setq skk-henkan-face (skk-make-face 'grey/DimGray)))
+  (setq skk-tut-file (concat user-emacs-directory "skk/SKK.tut"))
+  (setq skk-henkan-face (skk-make-face 'grey/DimGray))
+  (setq skk-large-jisyo (concat user-emacs-directory "skk/dic/SKK-JISYO.L")))
 
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)

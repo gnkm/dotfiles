@@ -8,6 +8,10 @@ emacs/quelpa
 emacs/recentf
 emacs/session*
 emacs/skk/*
+!emacs/skk/.gitkeep
+!emacs/skk/dic
+emacs/skk/dic/*
+!emacs/skk/dic/.gitkeep
 emacs/tramp
 emacs/vendor/*
 !emacs/vendor/list
