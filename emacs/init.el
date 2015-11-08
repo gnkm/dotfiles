@@ -23,6 +23,6 @@
 ;; init-loader
 (use-package init-loader
   :config
-  (init-loader-load "~/.emacs.d/conf"))
+  (init-loader-load (concat user-emacs-directory "conf")))
 
 ;;; init.el ends here

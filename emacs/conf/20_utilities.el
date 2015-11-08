@@ -7,7 +7,8 @@
 
 ;; auto-insert
 (auto-insert-mode)
-(setq auto-insert-directory "~/.emacs.d/insert-templates/")
+(setq auto-insert-directory
+      (concat user-emacs-directory "insert-templates/"))
 
 ;; ddskk
 
@@ -16,9 +17,9 @@
   (global-set-key "\C-\\" 'skk-mode)
   (setq skk-use-azik t)
   (setq-default skk-kutouten-type 'en)
-  (setq skk-tut-file (concat user-emacs-directory "skk/SKK.tut"))
+  (setq skk-tut-file (concat skk-user-directory "SKK.tut"))
   (setq skk-henkan-face (skk-make-face 'grey/DimGray))
-  (setq skk-large-jisyo (concat user-emacs-directory "skk/dic/SKK-JISYO.L")))
+  (setq skk-large-jisyo (concat skk-user-directory "dic/SKK-JISYO.L")))
 
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
@@ -37,7 +38,7 @@
 (use-package yasnippet
   :config
   (setq yas-snippet-dirs
-	'("~/.emacs.d/my-snippets"))
+	'((concat user-emacs-directory "my-snippets")))
   (yas-global-mode 1))
 
 (put 'narrow-to-region 'disabled nil)
