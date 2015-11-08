@@ -38,7 +38,7 @@
 (use-package yasnippet
   :config
   (setq yas-snippet-dirs
-	'((concat user-emacs-directory "my-snippets")))
+	(concat user-emacs-directory "my-snippets/"))
   (yas-global-mode 1))
 
 (put 'narrow-to-region 'disabled nil)

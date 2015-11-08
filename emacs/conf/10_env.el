@@ -33,6 +33,6 @@
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 ;; SKK 設定ファイルディレクトリ
-(setq skk-user-directory (concat user-emacs-directory "skk"))
+(setq skk-user-directory (concat user-emacs-directory "skk/"))
 
 ;;; 10_env.el ends here
