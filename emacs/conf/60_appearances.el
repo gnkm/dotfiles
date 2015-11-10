@@ -13,6 +13,7 @@
 (setq linum-format "%4d")
 ;; 対応する括弧を表示
 (show-paren-mode t)
+(use-package rainbow-delimiters)
 ;; カーソルの点滅をやめる
 (blink-cursor-mode 0)
 
