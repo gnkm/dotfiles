@@ -2,6 +2,8 @@ atom/.apm/*
 atom/packages/*
 atom/projects.cson
 emacs/.cask
+emacs/abbrev_defs
+emacs/auto-install
 emacs/elpa
 emacs/eshell
 emacs/kkcrc

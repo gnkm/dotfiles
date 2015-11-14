@@ -4,6 +4,7 @@
 (depends-on "ag")
 (depends-on "arduino-mode")
 (depends-on "async")
+(depends-on "auto-install")
 (depends-on "cask")
 (depends-on "coffee-mode")
 (depends-on "col-highlight")

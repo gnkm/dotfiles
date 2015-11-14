@@ -10,6 +10,7 @@
 (setq auto-insert-directory
       (concat user-emacs-directory "insert-templates/"))
 
+(use-package auto-install)
 ;; ddskk
 
 (use-package skk
