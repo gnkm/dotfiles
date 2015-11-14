@@ -50,6 +50,13 @@
 ;; Shell script
 (define-auto-insert "\\.sh" "bash-template.sh")
 
+;; vba
+(use-package visual-basic-mode
+  :load-path "auto-install")
+(use-package vbasense
+  :config
+  (setq vbasense-jump-to-definition-key "C->"))
+
 ;; web-mode
 ;; 参考：http://web-mode.org/
 (use-package web-mode

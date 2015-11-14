@@ -42,6 +42,7 @@
 (depends-on "twittering-mode")
 (depends-on "undo-tree")
 (depends-on "use-package")
+(depends-on "vbasense")
 (depends-on "vimrc-mode")
 (depends-on "web-mode")
 (depends-on "wgrep-ag")
