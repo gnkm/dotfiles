@@ -29,6 +29,8 @@
   :config
   (smartparens-global-mode t))
 
+(use-package rainbow-delimeters)
+
 ;; undo-tree
 (use-package undo-tree
   :config
