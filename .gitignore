@@ -16,3 +16,4 @@ emacs/skk/dic/*
 emacs/tramp
 emacs/vendor/*
 !emacs/vendor/list
+emacs/url/*
