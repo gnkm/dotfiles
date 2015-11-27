@@ -3,6 +3,11 @@
 ;;; Commentary:
 ;; settigs for org mode
 
+;;; Code:
+
+;; org mode
+(global-set-key (kbd "C-c a") 'org-agenda)
+
 ;; latex export
 (use-package ox-latex)
 ;; for org < 8
