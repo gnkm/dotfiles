@@ -4,6 +4,7 @@ atom/projects.cson
 emacs/.cask
 emacs/abbrev_defs
 emacs/auto-install
+emacs/bookmarks
 emacs/conf/99_local.el
 emacs/elpa
 emacs/eshell

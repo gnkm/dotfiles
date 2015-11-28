@@ -9,4 +9,8 @@
 (setq org-agenda-files
       '("~/dropbox/org/inbox.txt"))
 
+(setq org-capture-templates
+             '(("i" "Inbox" plain (file "~/dropbox/org/inbox.txt")
+		"** %? %U")))
+
 ;;; _99_local.sample.el ends here

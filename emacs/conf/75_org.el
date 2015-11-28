@@ -6,8 +6,11 @@
 ;;; Code:
 
 ;; org mode
-(global-set-key (kbd "C-c a") 'org-agenda)
 (add-to-list 'auto-mode-alist '("\\.txt$" . org-mode))
+(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c c") 'org-capture)
+(setq org-todo-keywords
+      '((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d)")))
 
 ;; latex export
 (use-package ox-latex)
