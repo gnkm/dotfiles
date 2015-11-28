@@ -13,4 +13,9 @@
              '(("i" "Inbox" plain (file "~/dropbox/org/inbox.txt")
 		"** %? %U")))
 
+(setq org-archive-location
+      (concat
+       (format-time-string "~/dropbox/org/archives/%Y-%W-archive.txt")
+       "::* From %s"))
+
 ;;; _99_local.sample.el ends here
