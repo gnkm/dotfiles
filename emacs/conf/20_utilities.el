@@ -11,8 +11,8 @@
       (concat user-emacs-directory "insert-templates/"))
 
 (use-package auto-install)
-;; ddskk
 
+;; ddskk
 (use-package skk
   :config
   (global-set-key "\C-\\" 'skk-mode)
