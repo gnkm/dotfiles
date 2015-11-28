@@ -7,6 +7,7 @@
 
 ;; org mode
 (global-set-key (kbd "C-c a") 'org-agenda)
+(add-to-list 'auto-mode-alist '("\\.txt$" . org-mode))
 
 ;; latex export
 (use-package ox-latex)
