@@ -94,10 +94,10 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# phpenv
-# 内部で rbenv を使用しているので rbenv の設定より後に記述のこと
-export PATH="$HOME/.phpenv/bin:$PATH"
-if which phpenv > /dev/null; then eval "$(phpenv init -)"; fi
+# phpbrew
+if [ -f $HOME/.phpbrew/bashrc ]; then
+    source $HOME/.phpbrew/bashrc
+fi
 
 # commands installed with cabal
 if [ -d $HOME/.cabal/bin ]; then
