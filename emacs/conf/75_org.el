@@ -10,7 +10,7 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 (global-set-key (kbd "C-c c") 'org-capture)
 (setq org-todo-keywords
-      '((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d)")))
+      '((sequence "TODO(t)" "STARTED(s)" "|" "DONE(d)" "SUSPENDED(p)")))
 
 ;; latex export
 (use-package ox-latex)
