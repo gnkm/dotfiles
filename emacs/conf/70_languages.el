@@ -42,7 +42,9 @@
 ;; php
 ;; 参考：http://www.emacswiki.org/emacs/PhpMode
 (use-package php-mode
-  :mode "\\.php$'")
+  :mode "\\.php$'"
+  :config
+  (define-auto-insert "\\.php" "php-template.php"))
 
 ;; python
 (define-auto-insert "\\.py" "python-template.py")
