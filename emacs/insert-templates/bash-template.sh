@@ -7,3 +7,5 @@ Usage   : ${0##*/} <var1> <var2> ...
 ____USAGE
 	exit 1
 }
+
+# main script starts here
