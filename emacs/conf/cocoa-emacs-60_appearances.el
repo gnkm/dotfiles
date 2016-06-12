@@ -7,7 +7,7 @@
 
 ;; font
 (set-face-attribute 'default nil
-		    :family "Ricty for Powerline"
+		    :family "Ricty Discord for Powerline"
 		    :height 150)
 
 ;;; cocoa-emacs-60_appearances.el ends here
