@@ -104,6 +104,9 @@ if [ -d $HOME/.cabal/bin ]; then
     PATH="$HOME/.cabal/bin:$PATH"
 fi
 
+# OPAM configuration
+. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
 # 関数ファイルをロードする
 COMMON_FUNCTIONS_FILENAME=common-functions
 COMMON_FUNCTIONS_FILE=$ZSH_DIR/$COMMON_FUNCTIONS_FILENAME
