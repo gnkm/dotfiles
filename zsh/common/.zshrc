@@ -67,11 +67,11 @@ setopt print_eight_bit
 setopt interactive_comments
 
 # ls のカラースキーム
-if [ -s ~/.dircolors ]; then
+if [ -s $ZSH_DIR/.dircolors ]; then
     if type dircolors > /dev/null 2>&1; then
-        eval $(dircolors ~/.dircolors)
+        eval $(dircolors $ZSH_DIR/.dircolors)
     elif type gdircolors > /dev/null 2>&1; then
-        eval $(gdircolors ~/.dircolors)
+        eval $(gdircolors $ZSH_DIR/.dircolors)
     fi
 fi
 

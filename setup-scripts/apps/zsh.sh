@@ -11,6 +11,7 @@ ln -s $HOME/.dotfiles/zsh/common/.zshrc $HOME/.zshrc
 ln -s $HOME/.dotfiles/zsh/common/.zshrc-aliases $ZSH_DIR/common-aliases
 ln -s $HOME/.dotfiles/zsh/common/.zshrc-antigen $ZSH_DIR/common-antigen
 ln -s $HOME/.dotfiles/zsh/common/.zshrc-functions $ZSH_DIR/common-functions
+ln -s $HOME/.dotfiles/zsh/common/.dircolors.zenburn $ZSH_DIR/.dircolors
 
 if [[ -s $HOME/.dotfiles/zsh/$OS/.zshrc ]]; then
     ln -s $HOME/.dotfiles/zsh/$OS/.zshrc $ZSH_DIR/os-specific-zshrc
