@@ -1,18 +1,4 @@
-# ===== antigen =====
-ANTIGEN_SOURCE_FILE=$HOME/vendor/apps/antigen/antigen.zsh
-if [ -s $ANTIGEN_SOURCE_FILE ]; then
-    source $ANTIGEN_SOURCE_FILE
-fi
-
 ZSH_DIR=$HOME/.zsh
-COMMON_ANTIGEN_FILENAME=common-antigen
-COMMON_ANTIGEN_FILE=$ZSH_DIR/$COMMON_ANTIGEN_FILENAME
-
-if [ -s $COMMON_ANTIGEN_FILE ]; then
-    source $COMMON_ANTIGEN_FILE
-fi
-
-# ===== original config =====
 
 export PATH=$HOME/.cask/bin:$PATH
 
@@ -121,6 +107,14 @@ COMMON_ALIASES_FILE=$ZSH_DIR/$COMMON_ALIASES_FILENAME
 
 if [ -s $COMMON_ALIASES_FILE ]; then
     source $COMMON_ALIASES_FILE
+fi
+
+# zplug 設定ファイルをロードする
+COMMON_ZPLUG_FILENAME=common-zplug
+COMMON_ZPLUG_FILE=$ZSH_DIR/$COMMON_ZPLUG_FILENAME
+
+if [ -s $COMMON_ZPLUG_FILE ]; then
+    source $COMMON_ZPLUG_FILE
 fi
 
 # npm の補完設定ファイルをロードする
