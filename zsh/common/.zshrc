@@ -91,7 +91,7 @@ if [ -d $HOME/.cabal/bin ]; then
 fi
 
 # OPAM configuration
-. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+source $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 # 関数ファイルをロードする
 COMMON_FUNCTIONS_FILENAME=common-functions
