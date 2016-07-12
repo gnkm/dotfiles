@@ -1,24 +1,24 @@
 "*":
-  editor:
-    showInvisibles: true
-    showIndentGuide: true
-    invisibles: {}
-    fontFamily: "Ricty Discord for Powerline"
   core:
+    audioBeep: false
     followSymlinks: true
+    projectHome: "~/projects"
     themes: [
       "atom-light-ui"
       "zenburn-theme"
     ]
-    projectHome: "~/projects"
-    audioBeep: false
+  editor:
+    fontFamily: "Ricty Discord for Powerline"
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+  "emacs-mode":
+    hideSidebar: false
+    hideTabs: false
+    useEmacsCursor: true
+    useFuzzyBufferFinder: false
+    useFuzzyFileFinder: false
   "exception-reporting":
     userId: "e5758d35-740f-4a0e-11aa-ec10e6fcab4d"
   welcome:
     showOnStartup: false
-  "emacs-mode":
-    hideTabs: false
-    hideSidebar: false
-    useEmacsCursor: true
-    useFuzzyFileFinder: false
-    useFuzzyBufferFinder: false
