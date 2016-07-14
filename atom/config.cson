@@ -1,5 +1,6 @@
 "*":
   core:
+    allowPendingPaneItems: false
     audioBeep: false
     followSymlinks: true
     projectHome: "~/projects"
