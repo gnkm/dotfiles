@@ -20,6 +20,16 @@ atom-text-editor {
 
 }
 
-atom-text-editor .cursor {
-
+atom-text-editor::shadow {
+  .gutter .cursor-line {
+    background: rgba(200, 200, 10, 0.2);
+  }
+  .highlights {
+    .selection .region {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  }
+  .line.highlight-line {
+    background: rgba(200, 200, 10, 0.2) !important;
+  }
 }
