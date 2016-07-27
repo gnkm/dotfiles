@@ -2,6 +2,9 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    disabledPackages: [
+      "autocomplete-plus"
+    ]
     followSymlinks: true
     projectHome: "~/projects"
     themes: [
