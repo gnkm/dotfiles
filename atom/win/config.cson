@@ -16,6 +16,7 @@
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
+    tabType: "soft"
   "emacs-mode":
     hideSidebar: false
     hideTabs: false
