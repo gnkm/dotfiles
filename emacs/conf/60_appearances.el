@@ -54,8 +54,12 @@
         (tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])))
   (global-whitespace-mode 1)
 
+  ;; zenburn-bg+1
   (defvar my/bg-color "#4F4F4F")
+  ;; zenburn-magenta
+  (defvar my/fg-color "#DC8CC3")
   (set-face-attribute 'whitespace-tab nil
+                    :foreground my/fg-color
                     :background my/bg-color))
 ;;; ===== モードライン =====
 ;; カーソルのある関数を表示する
