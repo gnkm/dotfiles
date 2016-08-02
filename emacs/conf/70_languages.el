@@ -16,7 +16,8 @@
 ;; emmet-mode
 (use-package emmet-mode
   :config
-  (add-hook 'sgml-mode-hook 'emmet-mode))
+  (add-hook 'sgml-mode-hook 'emmet-mode)
+  (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))))
 
 ;; dockerfile
 (use-package dockerfile-mode
