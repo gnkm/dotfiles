@@ -33,6 +33,9 @@
 ;; save 前に行末空白文字を削除する
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+;; no tabs
+(setq-default indent-tabs-mode nil)
+
 ;; SKK 設定ファイルディレクトリ
 (setq skk-user-directory (concat user-emacs-directory "skk/"))
 
