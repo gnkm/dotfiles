@@ -7,9 +7,10 @@
     ]
     followSymlinks: true
     projectHome: "~/projects"
+    telemetryConsent: "no"
     themes: [
       "atom-light-ui"
-      "zenburn-theme"
+      "batman-syntax"
     ]
   editor:
     fontFamily: "Ricty Discord for Powerline"
