@@ -2,6 +2,7 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # load following plugins
+zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting"
 
 # check コマンドで未インストール項目があるかどうか verbose にチェックし

@@ -7,5 +7,7 @@
 
 ;;メタキーをオプションキーに割り当て
 (setq mac-option-modifier 'meta)
+;; ¥の代わりにバックスラッシュを入力する
+(define-key global-map [?¥] [?\\])
 
 ;;; cocoa-emacs-30_keybindings.el ends here
