@@ -49,3 +49,9 @@
 [core]
 	excludesfile = ~/.gitignore
 	autocrlf = false
+
+[merge]
+	ff = false
+
+[pull]
+	rebase = true
