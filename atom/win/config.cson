@@ -4,13 +4,14 @@
     audioBeep: false
     disabledPackages: [
       "autocomplete-plus"
+      "language-gfm"
     ]
     followSymlinks: true
     projectHome: "~/projects"
     telemetryConsent: "no"
     themes: [
-      "atom-light-ui"
-      "batman-syntax"
+      "zenburn-ui"
+      "zenburn"
     ]
   editor:
     fontFamily: "Ricty Discord for Powerline"
