@@ -21,16 +21,23 @@ if test -d $HOME/.nodebrew/current/bin
   set -x PATH $HOME/.nodebrew/current/bin $PATH
 end
 
-# pyenv
-set -x PYENV_ROOT $HOME/.pyenv
-set -x PATH PYENV_ROOT/bin $PATH
-status --is-interactive; and source (pyenv init -|psub)
-
-# pyenv-virtualenv
-status --is-interactive; and source (pyenv virtualenv-init -|psub)
+# pyenv, pyenv-virtualenv
+if test -d $HOME/.pyenv
+  set -x PYENV_ROOT $HOME/.pyenv
+  set -x PATH PYENV_ROOT/bin $PATH
+  # pyenv
+  status --is-interactive; and source (pyenv init -|psub)
+  # pyenv-virtualenv
+  status --is-interactive; and source (pyenv virtualenv-init -|psub)
+end
 
 # rbenv
-status --is-interactive; and source (rbenv init -|psub)
+if test -d $HOME/.rbenv
+  status --is-interactive; and source (rbenv init -|psub)
+end
 
 # https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
-set -gx theme_powerline_fonts no
+# disable to right prompt
+function fish_right_prompt; end
+set -g theme_color_scheme zenburn
+# set -g theme_powerline_fonts no
