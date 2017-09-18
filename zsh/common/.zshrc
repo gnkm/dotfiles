@@ -93,6 +93,9 @@ fi
 # OPAM configuration
 source $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
+# load fzf
+[ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
+
 # 関数ファイルをロードする
 COMMON_FUNCTIONS_FILENAME=common-functions
 COMMON_FUNCTIONS_FILE=$ZSH_DIR/$COMMON_FUNCTIONS_FILENAME
