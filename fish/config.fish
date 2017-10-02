@@ -36,8 +36,11 @@ if test -d $HOME/.rbenv
   status --is-interactive; and source (rbenv init -|psub)
 end
 
+# fisher
+source $HOME/.config/fish/functions/fisher.fish
+
 # https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
 # disable to right prompt
 function fish_right_prompt; end
 set -g theme_color_scheme zenburn
-# set -g theme_powerline_fonts no
+set -g theme_nerd_fonts yes
