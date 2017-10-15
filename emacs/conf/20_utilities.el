@@ -12,9 +12,6 @@
 
 (use-package auto-install)
 
-;; flycheck
-(add-hook 'after-init-hook #'global-flycheck-mode)
-
 ;; smartparens
 (use-package smartparens
   :config
