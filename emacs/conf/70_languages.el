@@ -50,6 +50,9 @@
 
 ;; python
 (define-auto-insert "\\.py" "python-template.py")
+(use-package auto-virtualenvwrapper
+  :mode ("\\.py$" . python-mode)
+  )
 
 ;; Shell script
 (define-auto-insert "\\.sh" "bash-template.sh")
