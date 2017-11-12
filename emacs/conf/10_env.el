@@ -31,7 +31,11 @@
 (setq ring-bell-function 'ignore)
 
 ;; save 前に行末空白文字を削除する
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+;; https://qiita.com/UFO/items/4656d0740a67cca289db
+(defvar delete-trailing-whitespece-before-save t)
+(make-variable-buffer-local 'delete-trailing-whitespece-before-save)
+(advice-add 'delete-trailing-whitespace :before-while
+            (lambda () delete-trailing-whitespece-before-save))
 
 ;; no tabs
 (setq-default indent-tabs-mode nil)

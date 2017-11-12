@@ -39,7 +39,10 @@
 ;; markdown
 (use-package markdown-mode
   :mode "\\.md\\'"
-  :mode "\\.markdown\\'")
+  :mode "\\.markdown\\'"
+  :config
+  (custom-set-variables
+   '(delete-trailing-whitespece-before-save nil)))
 
 ;; php
 ;; 参考：http://www.emacswiki.org/emacs/PhpMode
