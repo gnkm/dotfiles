@@ -27,5 +27,7 @@
     useFuzzyFileFinder: false
   "exception-reporting":
     userId: "e5758d35-740f-4a0e-11aa-ec10e6fcab4d"
+  "markdown-preview":
+    breakOnSingleNewline: true
   welcome:
     showOnStartup: false
