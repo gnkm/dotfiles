@@ -1,21 +1,6 @@
-[core]
-excludesfile = /opt/boxen/config/git/gitignore
-
-[credential]
-helper = /opt/boxen/bin/boxen-git-credential
-
-[hub]
-protocol = https
-
 [user]
-	name = Genki Matsunaga
-	email = genki.matsunaga@gmail.com
+	name = gnkm
+	email = mail@example.com
 
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 [ghq]
 root = ~/projects
