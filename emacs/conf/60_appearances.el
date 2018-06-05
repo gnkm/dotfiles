@@ -17,6 +17,8 @@
 ;; カーソルの点滅をやめる
 (blink-cursor-mode 0)
 
+(use-package rainbow-mode)
+
 ;; 現在行と桁をハイライト
 (use-package crosshairs
   :config
