@@ -13,6 +13,7 @@
 (depends-on "dash")
 (depends-on "ddskk")
 (depends-on "dockerfile-mode")
+(depends-on "editorconfig")
 (depends-on "emmet-mode")
 (depends-on "esup")
 (depends-on "exec-path-from-shell")

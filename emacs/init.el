@@ -43,3 +43,19 @@
   (init-loader-load (concat user-emacs-directory "conf")))
 
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(delete-trailing-whitespece-before-save nil t)
+ '(package-selected-packages
+   (quote
+    (editorconfig zenburn-theme yasnippet yaml-mode wgrep-ag web-mode vimrc-mode vbasense use-package undo-tree twittering-mode tuareg smartparens rainbow-delimiters quickrun py-autopep8 powerline php-mode pallet mew markdown-mode magit lua-mode js2-mode jinja2-mode init-loader helm-ag haskell-mode gitignore-mode flymake-yaml flycheck fish-mode exec-path-from-shell esup emmet-mode dockerfile-mode ddskk coffee-mode auto-virtualenvwrapper arduino-mode ag))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
