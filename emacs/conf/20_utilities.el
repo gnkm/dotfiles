@@ -12,6 +12,11 @@
 
 (use-package auto-install)
 
+(use-package editorconfig
+  :ensure t
+  :config
+  (editorconfig-mode 1))
+
 ;; smartparens
 (use-package smartparens
   :config
