@@ -21,15 +21,8 @@ if test -d $HOME/.nodebrew/current/bin
   set -x PATH $HOME/.nodebrew/current/bin $PATH
 end
 
-# pyenv, pyenv-virtualenv
-if test -d $HOME/.pyenv
-  set -x PYENV_ROOT $HOME/.pyenv
-  set -x PATH PYENV_ROOT/bin $PATH
-  # pyenv
-  status --is-interactive; and source (pyenv init -|psub)
-  # pyenv-virtualenv
-  status --is-interactive; and source (pyenv virtualenv-init -|psub)
-end
+# pip
+set -x PATH $HOME/Library/Python/2.7/bin $PATH
 
 # rbenv
 if test -d $HOME/.rbenv
