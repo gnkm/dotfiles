@@ -43,6 +43,7 @@
 (depends-on "py-autopep8")
 (depends-on "quickrun")
 (depends-on "rainbow-delimiters")
+(depends-on "rainbow-mode")
 (depends-on "smartparens")
 (depends-on "tuareg")
 (depends-on "twittering-mode")
