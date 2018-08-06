@@ -27,6 +27,7 @@ set -x PATH $HOME/Library/Python/2.7/bin $PATH
 # rbenv
 if test -d $HOME/.rbenv
   status --is-interactive; and source (rbenv init -|psub)
+  set -x PATH $HOME/.rbenv/shims $PATH
 end
 
 # fisher
@@ -38,3 +39,4 @@ function fish_right_prompt; end
 set -g theme_color_scheme zenburn
 set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts yes
+set -g fish_user_paths "/usr/local/opt/openssl/bin" $fish_user_paths
