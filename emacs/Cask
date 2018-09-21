@@ -23,6 +23,7 @@
 (depends-on "flymake-yaml")
 (depends-on "git-commit")
 (depends-on "gitignore-mode")
+(depends-on "go-mode")
 (depends-on "haskell-mode")
 (depends-on "helm")
 (depends-on "helm-ag")
