@@ -9,8 +9,8 @@ if test -d $HOME/.cabal/bin
   set -x PATH $HOME/.cabal/bin $PATH
 end
 
-# obtained by go get
-set -x GOPATH $HOME/.go
+# directory of src developed with go lang
+set -x GOPATH $HOME/projects
 if test -d $GOPATH
   set -x PATH $GOPATH/bin $PATH
 end
