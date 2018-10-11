@@ -21,6 +21,16 @@ if test -d $HOME/.nodebrew/current/bin
   set -x PATH $HOME/.nodebrew/current/bin $PATH
 end
 
+# pyenv
+if which pyenv > /dev/null
+  status --is-interactive; and source (pyenv init -|psub)
+end
+
+# pyenv-virtualenv
+if which pyenv-virtualenv-init > /dev/null
+  status --is-interactive; and source (pyenv-virtualenv-init -|psub)
+end
+
 # pip
 set -x PATH $HOME/Library/Python/2.7/bin $PATH
 
