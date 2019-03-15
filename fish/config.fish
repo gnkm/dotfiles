@@ -50,3 +50,7 @@ set -g theme_color_scheme zenburn
 set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts yes
 set -g fish_user_paths "/usr/local/opt/openssl/bin" $fish_user_paths
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f $HOME/google-cloud-sdk/path.fish.inc ]; . $HOME/google-cloud-sdk/path.fish.inc; end
+
