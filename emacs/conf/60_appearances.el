@@ -5,26 +5,46 @@
 
 ;;; Code:
 
+;;; ===== 全体 =====
+;; アクティブバッファの背景色を明るくする
+(require 'hiwin)
+(use-package hiwin
+  :config
+  (hiwin-activate)
+  (set-face-background 'default "gray10")
+  (set-face-background 'hiwin-face "gray16")
+  )
+
 ;;; ===== メインバッファ =====
 (load-theme 'zenburn t)
 
 ;; 行番号を常に表示
 (global-linum-mode t)
 (setq linum-format "%4d")
+;; 現在の行番号ハイライト
+(use-package hlinum
+  :config
+  (require 'hlinum)
+  (hlinum-activate)
+  (set-face-foreground 'linum-highlight-face "#3FC")
+  (set-face-background 'linum-highlight-face "black")
+  )
+
 ;; 対応する括弧を表示
 (show-paren-mode t)
 (use-package rainbow-delimiters)
+
 ;; カーソルの点滅をやめる
 (blink-cursor-mode 0)
 
 (use-package rainbow-mode)
 
 ;; 現在行と桁をハイライト
-(use-package crosshairs
-  :config
-  (crosshairs-mode 1)
-  (set-face-background 'hl-line "dim gray")
-  (set-face-background 'col-highlight "dim gray"))
+;; (use-package crosshairs
+;;   :config
+;;   (crosshairs-mode 1)
+;;   (set-face-background 'hl-line "dim gray")
+;;   (set-face-background 'col-highlight "dim gray"))
 
 ;; 折り返し表示する
 (setq truncate-lines t)

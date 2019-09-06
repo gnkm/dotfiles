@@ -9,9 +9,9 @@
 (use-package generic-x)
 
 ;; coffee-mode
-(use-package coffee-mode
-  :config
-  (custom-set-variables '(coffee-tab-width 2)))
+;; (use-package coffee-mode
+;;   :config
+;;   (custom-set-variables '(coffee-tab-width 2)))
 
 ;; emmet-mode
 (use-package emmet-mode
@@ -57,15 +57,32 @@
   :mode ("\\.py$" . python-mode)
   )
 
+;; scheme
+;; 参照: プログラミング Gauche
+(modify-coding-system-alist 'process "gosh" '(utf-8 . utf-8))
+(setq scheme-program-name "gosh -i")
+(autoload 'scheme-mode "cmuscheme" "Major mode for Scheme." t)
+(autoload 'run-scheme "cmuscheme" "Run an inferior Scheme process." t)
+
+(defun scheme-other-window ()
+  "Run scheme on other window"
+  (interactive)
+  (switch-to-buffer-other-window
+   (get-buffer-create "*scheme*"))
+  (run-scheme scheme-program-name))
+
+(define-key global-map
+  "\C-cs" 'scheme-other-window)
+
 ;; Shell script
 (define-auto-insert "\\.sh" "bash-template.sh")
 
 ;; vba
-(use-package visual-basic-mode
-  :load-path "auto-install")
-(use-package vbasense
-  :config
-  (setq vbasense-jump-to-definition-key "C->"))
+;; (use-package visual-basic-mode
+;;   :load-path "auto-install")
+;; (use-package vbasense
+;;   :config
+;;   (setq vbasense-jump-to-definition-key "C->"))
 
 ;; web-mode
 ;; 参考：http://web-mode.org/

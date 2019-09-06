@@ -10,7 +10,7 @@
 (setq auto-insert-directory
       (concat user-emacs-directory "insert-templates/"))
 
-(use-package auto-install)
+;; (use-package auto-install)
 
 ;; editorconfig
 (use-package editorconfig
@@ -32,7 +32,9 @@
 (use-package yasnippet
   :config
   (setq yas-snippet-dirs
-	(concat user-emacs-directory "my-snippets/"))
+	;; (concat user-emacs-directory "my-snippets/")
+	'("~/.emacs.d/my-snippets/")
+	)
   (yas-global-mode 1))
 
 (put 'narrow-to-region 'disabled nil)
