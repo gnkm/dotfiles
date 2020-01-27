@@ -44,6 +44,11 @@
   (custom-set-variables
    '(delete-trailing-whitespece-before-save nil)))
 
+;; pinescript
+(use-package pine-script-mode
+  :mode "\\.pine\\'"
+  )
+
 ;; php
 ;; 参考：http://www.emacswiki.org/emacs/PhpMode
 (use-package php-mode
