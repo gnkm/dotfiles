@@ -47,7 +47,6 @@ source $HOME/.config/fish/functions/fisher.fish
 # disable to right prompt
 function fish_right_prompt; end
 set -g theme_color_scheme zenburn
-set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts yes
 set -g fish_user_paths "/usr/local/opt/openssl/bin" $fish_user_paths
 
