@@ -54,3 +54,10 @@ set -g fish_user_paths "/usr/local/opt/openssl/bin" $fish_user_paths
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f $HOME/google-cloud-sdk/path.fish.inc ]; . $HOME/google-cloud-sdk/path.fish.inc; end
 
+# Python
+# Make python3 default
+alias python2 python
+alias python python3
+
+alias pip2 pip
+alias pip pip3
