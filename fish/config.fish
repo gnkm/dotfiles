@@ -16,9 +16,9 @@ if test -d $GOPATH
 end
 
 # *env
-# nodebrew
-if test -d $HOME/.nodebrew/current/bin
-  set -x PATH $HOME/.nodebrew/current/bin $PATH
+# nodenv
+if test -d $HOME/.anyenv/envs/nodenv
+  set -x PATH $HOME/.anyenv/envs/nodenv/bin $PATH
 end
 
 # pyenv
