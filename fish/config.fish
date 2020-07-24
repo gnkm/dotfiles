@@ -19,6 +19,7 @@ end
 # nodenv
 if test -d $HOME/.anyenv/envs/nodenv
   set -x PATH $HOME/.anyenv/envs/nodenv/bin $PATH
+  status --is-interactive; and source (nodenv init -|psub)
 end
 
 # pyenv
