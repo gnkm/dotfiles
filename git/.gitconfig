@@ -34,9 +34,7 @@
 	### C: detect copy
 	### M: detect rename
 	## pretty format
-	### %ad		: author date (format respects --date= option)
-	### %cn		: committer name
-	### %d		: ref names, like the --decorate option of git-log(1)
+	### %an		: author name
 	### %h		: abbreviated commit hash
 	### %s		: subject
 	gr = log \
