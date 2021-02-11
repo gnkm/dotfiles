@@ -39,12 +39,30 @@
 	### %d		: ref names, like the --decorate option of git-log(1)
 	### %h		: abbreviated commit hash
 	### %s		: subject
-	gr = log --graph --all --color --date-order -C -M --pretty=format:'%ad %Cgreen[%an]%Creset %s %C(yellow)%d%Creset' --date=short --name-status
-	lg = log \
-	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)%s%Creset %C(blue)%an%Creset' \
+	gr = log \
+	  --graph \
+	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%Creset %C(blue)%an%Creset' \
+	  --date=iso
+
+	# detailed log
+	lgd = log \
+	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%Creset %C(blue)%an%Creset' \
 	  -5 \
 	  --date=iso \
+	  --date-order \
+	  -C \
+	  -M \
 	  -p
+
+	# simple log
+	lgs = log \
+	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%Creset %C(blue)%an%Creset' \
+	  -5 \
+	  --date=iso \
+	  --date-order \
+	  -C \
+	  -M \
+	  --name-status
 
 	ls = ls-files
 	st = status
