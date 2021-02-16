@@ -55,7 +55,6 @@
 	# simple log
 	lgs = log \
 	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%Creset %C(blue)%an%Creset' \
-	  -5 \
 	  --date=iso \
 	  --date-order \
 	  -C \
