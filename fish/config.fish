@@ -63,4 +63,4 @@ alias pip2 pip
 alias pip pip3
 
 # git
-abbr gitlfsls 'git lfs ls-files' 
+abbr gitlfsls 'git lfs ls-files'
