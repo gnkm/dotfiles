@@ -62,5 +62,8 @@ alias python python3
 alias pip2 pip
 alias pip pip3
 
+# Unix Commands
+abbr date 'date "+%Y-%m-%d %H:%m:%S"'
+
 # git
 abbr gitlfsls 'git lfs ls-files'
