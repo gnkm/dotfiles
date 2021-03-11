@@ -45,7 +45,6 @@
 	# detailed log
 	lgd = log \
 	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
-	  -5 \
 	  --date=iso \
 	  --date-order \
 	  -C \
