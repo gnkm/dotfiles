@@ -39,12 +39,12 @@
 	### %s		: subject
 	gr = log \
 	  --graph \
-	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
+	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
 	  --date=iso
 
 	# detailed log
 	lgd = log \
-	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
+	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
 	  --date=iso \
 	  --date-order \
 	  -C \
@@ -53,7 +53,7 @@
 
 	# simple log
 	lgs = log \
-	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
+	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
 	  --date=iso \
 	  --date-order \
 	  -C \
