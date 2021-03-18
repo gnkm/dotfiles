@@ -64,6 +64,7 @@ alias pip pip3
 
 # Unix Commands
 abbr datef 'date +"%Y/%m/%d %H:%M:%S"'
+abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
 
 # git
 abbr gitlfsls 'git lfs ls-files'
