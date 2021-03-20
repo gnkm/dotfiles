@@ -1,4 +1,9 @@
 # PATH
+# linux brew
+if test -d $HOME/../linuxbrew/.linuxbrew/bin
+  set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH
+end
+
 # cask
 if test -d $HOME/.cask/bin
   set -x PATH $HOME/.cask/bin $PATH
