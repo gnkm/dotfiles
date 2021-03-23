@@ -1,8 +1,38 @@
 {
+    "diffEditor.renderSideBySide": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "SauceCodePro Nerd Font",
+    "editor.wordWrap": "on",
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Zenburn",
+    "python.pythonPath": "/Users/gnkm/.pyenv/versions/baseball-spaia/bin/python",
+    "gruvboxMaterial.darkSelection": "green",
+    "gruvboxMaterial.lightSelection": "red",
     "workbench.colorCustomizations": {
-        "window.activeBorder": "#00cc00",
-        "window.inactiveBorder": "#aaaaaa"
+        "editorGroup.border": "#ffffff",
+        "tab.activeBorder": "#00aa00",
+        "window.activeBorder": "#00aa00",
+        "window.inactiveBorder": "#aa0000"
     },
+    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "workbench.iconTheme": "vscode-icons",
+    "markdown-preview-enhanced-with-litvis.automaticallyShowPreviewOfMarkdownBeingEdited": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "python.showStartPage": false,
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
     "emmet.syntaxProfiles": {
         "html": {
             "filters": "html,c"
