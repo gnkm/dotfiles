@@ -2,5 +2,13 @@
     "workbench.colorCustomizations": {
         "window.activeBorder": "#00cc00",
         "window.inactiveBorder": "#aaaaaa"
+    },
+    "emmet.syntaxProfiles": {
+        "html": {
+            "filters": "html,c"
+        },
+    },
+    "emmet.preferences": {
+        "filter.commentAfter": "<!-- /[#ID][.CLASS] -->"
     }
 }
