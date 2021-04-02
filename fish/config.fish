@@ -25,6 +25,10 @@ end
 if test -d $HOME/.anyenv/envs/nodenv
   set -x PATH $HOME/.anyenv/envs/nodenv/bin $PATH
   status --is-interactive; and source (nodenv init -|psub)
+
+  # Second line command is faster than first one.
+  # set -x PATH $HOME/.nodenv/versions/**/bin $PATH
+  set -x PATH $HOME/.nodenv/versions/12.18.2/bin $PATH
 end
 
 # pyenv
