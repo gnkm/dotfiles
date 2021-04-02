@@ -21,10 +21,12 @@ ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
 naumovs.color-highlight
 njpwerner.autodocstring
+octref.vetur
 sainnhe.gruvbox-material
 shd101wyy.markdown-preview-enhanced
 Sir2B.lispbeautifier
 skyapps.fish-vscode
 streetsidesoftware.code-spell-checker
+tomoki1207.vscode-input-sequence
 tuttieee.emacs-mcx
 vscode-icons-team.vscode-icons
