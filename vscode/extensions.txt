@@ -14,6 +14,7 @@ jsynowiec.vscode-insertdatestring
 koehlma.markdown-math
 luggage66.AWK
 mechatroner.rainbow-csv
+mhutchie.git-graph
 ms-azuretools.vscode-docker
 ms-mssql.mssql
 ms-pyright.pyright
