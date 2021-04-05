@@ -19,6 +19,7 @@ ms-mssql.mssql
 ms-python.python
 ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
+ms-vsliveshare.vsliveshare
 naumovs.color-highlight
 njpwerner.autodocstring
 octref.vetur
