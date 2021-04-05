@@ -16,6 +16,7 @@ luggage66.AWK
 mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 ms-mssql.mssql
+ms-pyright.pyright
 ms-python.python
 ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
