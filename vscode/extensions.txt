@@ -3,6 +3,7 @@ CoenraadS.bracket-pair-colorizer-2
 cpmcgrath.codealignment-vscode
 davidhouchin.whitespace-plus
 donjayamanne.githistory
+eamodio.gitlens
 EditorConfig.EditorConfig
 equinusocio.vsc-material-theme-icons
 formulahendry.vscode-mysql
