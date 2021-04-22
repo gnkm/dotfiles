@@ -72,7 +72,11 @@ alias pip2 pip
 alias pip pip3
 
 # Unix Commands
-abbr datef 'date +"%Y/%m/%d %H:%M:%S"'
+# その日のコミット一覧を表示する
+# git lgs | ag (datefgit) | tail -r
+abbr datefgit 'date +"%Y-%m-%d"'
+
+abbr datefs 'date +"%Y/%m/%d %H:%M:%S"'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
 
 # git
