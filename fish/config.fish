@@ -72,6 +72,8 @@ alias pip2 pip
 alias pip pip3
 
 # Unix Commands
+abbr la 'ls -la --time-style="+%Y-%m-%d"'
+
 # その日のコミット一覧を表示する
 # git lgs | ag (datefgit) | tail -r
 abbr datefgit 'date +"%Y-%m-%d"'
