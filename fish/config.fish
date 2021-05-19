@@ -72,11 +72,13 @@ alias pip2 pip
 alias pip pip3
 
 # Unix Commands
-abbr la 'ls -la --time-style="+%Y-%m-%d"'
+if test (uname -s) = 'Linux'
+  abbr la 'ls -la --time-style="+%Y-%m-%d"'
+end
 
-# その日のコミット一覧を表示する
-# git lgs | ag (datefgit) | tail -r
-abbr datefgit 'date +"%Y-%m-%d"'
+# datefymd を使ってその日のコミット一覧を表示する
+# git lgs | ag (datefymd) | tail -r
+abbr datefymd 'date +"%Y-%m-%d"'
 
 abbr datefs 'date +"%Y/%m/%d %H:%M:%S"'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
