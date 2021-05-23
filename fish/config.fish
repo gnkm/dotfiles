@@ -72,8 +72,13 @@ alias pip2 pip
 alias pip pip3
 
 # Unix Commands
-if test (uname -s) = 'Linux'
+switch (uname -s)
+case 'Linux'
   abbr la 'ls -la --time-style="+%Y-%m-%d"'
+case 'Darwin'
+  if which gls > /dev/null
+    abbr la 'gls -la --time-style="+%Y-%m-%d"'
+  end
 end
 
 # datefymd を使ってその日のコミット一覧を表示する
