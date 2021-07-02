@@ -18,3 +18,9 @@ indent_size = 4
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.ahk]
+charset = utf-8-bom
+end_of_line = crlf
+indent_style = space
+indent_size = 4
