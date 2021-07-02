@@ -75,6 +75,7 @@ alias pip pip3
 switch (uname -s)
 case 'Linux'
     abbr la 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
+    abbr ll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
 case 'Darwin'
     if which gls > /dev/null
         abbr la 'gls -la --time-style="+%Y-%m-%d %H:%M:%S"'
