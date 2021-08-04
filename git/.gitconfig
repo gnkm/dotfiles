@@ -70,6 +70,7 @@
 	excludesfile = ~/.gitignore
 	autocrlf = false
 	editor = vim
+	quotepath = false
 
 [merge]
 	ff = false
