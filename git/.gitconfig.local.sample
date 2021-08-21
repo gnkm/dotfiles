@@ -3,4 +3,4 @@
 	email = mail@example.com
 
 [ghq]
-root = ~/projects/src
+root = ~/projects
