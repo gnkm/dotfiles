@@ -29,6 +29,7 @@
 	bl = blame
 	br = branch -a
 	co = checkout
+    f = fetch
 	# log options
 	## diff
 	### C: detect copy
