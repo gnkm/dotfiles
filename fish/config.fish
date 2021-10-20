@@ -20,34 +20,9 @@ if test -d $GOPATH
     set -x PATH $GOPATH/bin $PATH
 end
 
-# *env
-# nodenv
-if test -d $HOME/.anyenv/envs/nodenv
-    set -x PATH $HOME/.anyenv/envs/nodenv/bin $PATH
-    status --is-interactive; and source (nodenv init -|psub)
-
-    # Second line command is faster than first one.
-    # set -x PATH $HOME/.nodenv/versions/**/bin $PATH
-    set -x PATH $HOME/.nodenv/versions/12.18.2/bin $PATH
-end
-
-# pyenv
-if which pyenv > /dev/null
-    status --is-interactive; and source (pyenv init -|psub)
-end
-
-# pyenv-virtualenv
-if which pyenv-virtualenv-init > /dev/null
-    status --is-interactive; and source (pyenv-virtualenv-init -|psub)
-end
-
-# pip
-set -x PATH $HOME/Library/Python/2.7/bin $PATH
-
-# rbenv
-if test -d $HOME/.rbenv
-    status --is-interactive; and source (rbenv init -|psub)
-    set -x PATH $HOME/.rbenv/shims $PATH
+# anyenv
+if which anyenv > /dev/null
+   status --is-interactive; and source (anyenv init -|psub)
 end
 
 # fisher
