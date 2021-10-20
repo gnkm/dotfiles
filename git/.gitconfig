@@ -27,7 +27,7 @@
 [alias]
 	# アルファベット順に記載のこと
 	bl = blame
-	br = branch -a
+	br = branch
 	co = checkout
     f = fetch
 	# log options
