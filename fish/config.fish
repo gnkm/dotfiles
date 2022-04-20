@@ -1,4 +1,10 @@
 # PATH
+
+# brew
+if test -d /opt/homebrew/bin
+    set -x PATH /opt/homebrew/bin $PATH
+end
+
 # linux brew
 if test -d $HOME/../linuxbrew/.linuxbrew/bin
     set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH
@@ -26,7 +32,7 @@ if which anyenv > /dev/null
 end
 
 # fisher
-source $HOME/.config/fish/functions/fisher.fish
+if [ -f $HOME/.config/fish/functions/fisher.fish ]; . $HOME/.config/fish/functions/fisher.fish; end
 
 # https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
 # disable to right prompt
