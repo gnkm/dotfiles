@@ -34,6 +34,11 @@ end
 # fisher
 if [ -f $HOME/.config/fish/functions/fisher.fish ]; . $HOME/.config/fish/functions/fisher.fish; end
 
+# poetry
+if test -d $HOME/Library/Python/3.9/bin
+    set -x PATH $HOME/Library/Python/3.9/bin $PATH
+end
+
 # https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
 # disable to right prompt
 function fish_right_prompt; end
