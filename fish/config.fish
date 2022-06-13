@@ -21,12 +21,13 @@ if [ -f $HOME/.config/fish/functions/fisher.fish ]; source $HOME/.config/fish/fu
 ## Google Cloud SDK
 if [ -f $HOME/google-cloud-sdk/path.fish.inc ]; source $HOME/google-cloud-sdk/path.fish.inc; end
 
-# https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
-# disable to right prompt
-function fish_right_prompt; end
+# Appearance
+## https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
 set -g theme_color_scheme zenburn
 set -g theme_nerd_fonts yes
 set -g fish_user_paths "/usr/local/opt/openssl/bin" $fish_user_paths
+## disable to right prompt
+function fish_right_prompt; end
 
 # Python
 # Make python3 default
