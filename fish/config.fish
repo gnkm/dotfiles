@@ -41,6 +41,16 @@ alias sed gsed
 # abbrebeations
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
 abbr datefymd 'date +"%Y-%m-%d"'  # e.g. git lgs | ag (datefymd) | tail -r
+## docker
+abbr d 'docker'
+abbr dps 'docker ps -a'
+abbr drm 'docker rm'
+## docker compose
+abbr dc 'docker compose'
+abbr dcd 'docker compose down'
+abbr dcps 'docker compose ps -a'
+abbr dcup 'docker compose up'
+
 abbr gitlfsls 'git lfs ls-files'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
 abbr la 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
