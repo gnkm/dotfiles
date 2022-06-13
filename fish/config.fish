@@ -29,12 +29,9 @@ set -g fish_user_paths "/usr/local/opt/openssl/bin" $fish_user_paths
 ## disable to right prompt
 function fish_right_prompt; end
 
-# Python
-# Make python3 default
-alias python2 python
+# aliases
+## Python. Make python3 default.
 alias python python3
-
-alias pip2 pip
 alias pip pip3
 
 # Unix Commands
