@@ -32,9 +32,11 @@ set -g fish_user_paths "/usr/local/opt/openssl/bin" $fish_user_paths
 function fish_right_prompt; end
 
 # aliases
+alias awk gawk
 ## Make python3 default.
 alias python python3
 alias pip pip3
+alias sed gsed
 
 # abbrebeations
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
