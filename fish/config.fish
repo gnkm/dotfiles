@@ -22,6 +22,8 @@ if which anyenv > /dev/null; status --is-interactive; and source (anyenv init -|
 if [ -f $HOME/.config/fish/functions/fisher.fish ]; source $HOME/.config/fish/functions/fisher.fish; end
 ## Google Cloud SDK
 if [ -f $HOME/google-cloud-sdk/path.fish.inc ]; source $HOME/google-cloud-sdk/path.fish.inc; end
+## pyenv
+if which pyenv > /dev/null; status --is-interactive; and source (pyenv init -|psub); end
 ## zoxide
 if which zoxide > /dev/null; status --is-interactive; and zoxide init --cmd j fish | source; end
 
