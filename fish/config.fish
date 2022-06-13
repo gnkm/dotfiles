@@ -1,30 +1,18 @@
 # PATH
 
 # brew
-if test -d /opt/homebrew/bin
-    set -x PATH /opt/homebrew/bin $PATH
-end
-
-# linux brew
-if test -d $HOME/../linuxbrew/.linuxbrew/bin
-    set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH
-end
-
-# cask
-if test -d $HOME/.cask/bin
-    set -x PATH $HOME/.cask/bin $PATH
-end
-
+if [ -d /opt/homebrew/bin ]; set -x PATH /opt/homebrew/bin $PATH; end
 # cabal
-if test -d $HOME/.cabal/bin
-    set -x PATH $HOME/.cabal/bin $PATH
-end
-
-# directory of src developed with go lang
+if [ -d $HOME/.cabal/bin ]; set -x PATH $HOME/.cabal/bin $PATH; end
+# cask
+if [ -d $HOME/.cask/bin ]; set -x PATH $HOME/.cask/bin $PATH; end
+# GOPATH
 set -x GOPATH $HOME/projects
-if test -d $GOPATH
-    set -x PATH $GOPATH/bin $PATH
-end
+if [ -d $GOPATH ]; set -x PATH $GOPATH/bin $PATH; end
+# linux brew
+if [ -d $HOME/../linuxbrew/.linuxbrew/bin ]; set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH; end
+# poetry
+if [ -d $HOME/Library/Python/3.9/bin ]; set -x PATH $HOME/Library/Python/3.9/bin $PATH; end
 
 # anyenv
 if which anyenv > /dev/null
@@ -33,11 +21,6 @@ end
 
 # fisher
 if [ -f $HOME/.config/fish/functions/fisher.fish ]; . $HOME/.config/fish/functions/fisher.fish; end
-
-# poetry
-if test -d $HOME/Library/Python/3.9/bin
-    set -x PATH $HOME/Library/Python/3.9/bin $PATH
-end
 
 # https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
 # disable to right prompt
