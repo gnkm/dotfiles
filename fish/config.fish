@@ -14,9 +14,7 @@ if [ -d $HOME/../linuxbrew/.linuxbrew/bin ]; set -x PATH $HOME/../linuxbrew/.lin
 if [ -d $HOME/Library/Python/3.9/bin ]; set -x PATH $HOME/Library/Python/3.9/bin $PATH; end
 
 # anyenv
-if which anyenv > /dev/null
-   status --is-interactive; and source (anyenv init -|psub)
-end
+if which anyenv > /dev/null; status --is-interactive; and source (anyenv init -|psub); end
 
 # fisher
 if [ -f $HOME/.config/fish/functions/fisher.fish ]; . $HOME/.config/fish/functions/fisher.fish; end
