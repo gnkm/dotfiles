@@ -5,6 +5,8 @@ if [ -d /opt/homebrew/bin ]; set -x PATH /opt/homebrew/bin $PATH; end
 if [ -d $HOME/.cabal/bin ]; set -x PATH $HOME/.cabal/bin $PATH; end
 ## cask
 if [ -d $HOME/.cask/bin ]; set -x PATH $HOME/.cask/bin $PATH; end
+## coreutils
+if [ -d /opt/homebrew/opt/coreutils/libexec/gnubin ]; set -x PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH; end
 ## GOPATH
 set -x GOPATH $HOME/projects
 if [ -d $GOPATH ]; set -x PATH $GOPATH/bin $PATH; end
