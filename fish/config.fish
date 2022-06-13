@@ -36,23 +36,10 @@ function fish_right_prompt; end
 alias python python3
 alias pip pip3
 
-# Unix Commands
-switch (uname -s)
-case 'Linux'
-    abbr la 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
-    abbr ll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
-case 'Darwin'
-    if which gls > /dev/null
-        abbr la 'gls -la --time-style="+%Y-%m-%d %H:%M:%S"'
-    end
-end
-
-# datefymd を使ってその日のコミット一覧を表示する
-# git lgs | ag (datefymd) | tail -r
-abbr datefymd 'date +"%Y-%m-%d"'
-
-abbr datefs 'date +"%Y/%m/%d %H:%M:%S"'
-abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
-
-# git
+# abbrebeations
+abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
+abbr datefymd 'date +"%Y-%m-%d"'  # e.g. git lgs | ag (datefymd) | tail -r
 abbr gitlfsls 'git lfs ls-files'
+abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
+abbr la 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
+abbr ll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
