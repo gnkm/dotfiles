@@ -22,6 +22,8 @@ if which anyenv > /dev/null; status --is-interactive; and source (anyenv init -|
 if [ -f $HOME/.config/fish/functions/fisher.fish ]; source $HOME/.config/fish/functions/fisher.fish; end
 ## Google Cloud SDK
 if [ -f $HOME/google-cloud-sdk/path.fish.inc ]; source $HOME/google-cloud-sdk/path.fish.inc; end
+## zoxide
+if which zoxide > /dev/null; status --is-interactive; and zoxide init --cmd j fish | source; end
 
 # Appearance
 ## https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
