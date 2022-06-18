@@ -1,3 +1,5 @@
+eval (ssh-agent -c)
+
 # PATH
 ## brew
 if [ -d /opt/homebrew/bin ]; set -x PATH /opt/homebrew/bin $PATH; end
@@ -82,7 +84,7 @@ abbr glgs 'git log \
   -M \
   --name-status'
 abbr gls 'git ls-files'
-abbr gst 'git status'
+abbr gs 'git status'
 
 abbr gitlfsls 'git lfs ls-files'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
