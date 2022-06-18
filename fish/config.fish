@@ -85,6 +85,7 @@ abbr glgs 'git log \
   --name-status'
 abbr gls 'git ls-files'
 abbr gp 'git push'
+abbr gr 'git restore'
 abbr gs 'git status'
 
 abbr gitlfsls 'git lfs ls-files'
