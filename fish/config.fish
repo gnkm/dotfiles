@@ -44,7 +44,7 @@ alias sed gsed
 
 # abbrebeations
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
-abbr datefymd 'date +"%Y-%m-%d"'  # e.g. git lgs | ag (datefymd) | tail -r
+abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | ag (datefymd) | tail -r
 ## docker
 abbr d 'docker'
 abbr dps 'docker ps -a'
@@ -54,6 +54,35 @@ abbr dc 'docker compose'
 abbr dcd 'docker compose down'
 abbr dcps 'docker compose ps -a'
 abbr dcup 'docker compose up'
+## git
+abbr gbl 'git blame'
+abbr gbr 'git branch'
+abbr gca 'git commit -a'
+abbr gco 'git checkout'
+abbr gf 'git fetch'
+### graph
+abbr ggraph 'git log \
+  --graph \
+  --pretty=format:"%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset" \
+  --date=iso'
+# detailed log
+abbr glgd 'git log \
+  --pretty=format:"%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset" \
+  --date=iso \
+  --date-order \
+  -C \
+  -M \
+  -p'
+# simple log
+abbr glgs 'git log \
+  --pretty=format:"%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset" \
+  --date=iso \
+  --date-order \
+  -C \
+  -M \
+  --name-status'
+abbr gls 'git ls-files'
+abbr gst 'git status'
 
 abbr gitlfsls 'git lfs ls-files'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'

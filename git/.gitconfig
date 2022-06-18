@@ -24,46 +24,6 @@
 	branch		= magenta				# the current branch
 	nobranch	= magenta				# the color the no branch warning is shown in, defaulting to red
 
-[alias]
-	# アルファベット順に記載のこと
-	bl = blame
-	br = branch
-	co = checkout
-    f = fetch
-	# log options
-	## diff
-	### C: detect copy
-	### M: detect rename
-	## pretty format
-	### %an		: author name
-	### %h		: abbreviated commit hash
-	### %s		: subject
-	gr = log \
-	  --graph \
-	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
-	  --date=iso
-
-	# detailed log
-	lgd = log \
-	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
-	  --date=iso \
-	  --date-order \
-	  -C \
-	  -M \
-	  -p
-
-	# simple log
-	lgs = log \
-	  --pretty=format:'%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset' \
-	  --date=iso \
-	  --date-order \
-	  -C \
-	  -M \
-	  --name-status
-
-	ls = ls-files
-	st = status
-
 [push]
 	default = current
 
