@@ -59,7 +59,7 @@ abbr dcup 'docker compose up'
 ## git
 abbr gbl 'git blame'
 abbr gbr 'git branch'
-abbr gca 'git commit -a'
+abbr gcam 'git commit -am'
 abbr gco 'git checkout'
 abbr gf 'git fetch'
 ### graph
