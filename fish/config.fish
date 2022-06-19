@@ -47,12 +47,14 @@ alias sed gsed
 # abbrebeations
 abbr . 'source $HOME/.config/fish/config.fish'
 abbr ab 'cat $HOME/.config/fish/config.fish | rg "abbr" | less'
+abbr c 'code'
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
 abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | ag (datefymd) | tail -r
 ## docker
 abbr d 'docker'
 abbr dps 'docker ps -a'
 abbr drm 'docker rm'
+abbr ds 'docker stop'
 ## docker compose
 abbr dc 'docker compose'
 abbr dcd 'docker compose down'
