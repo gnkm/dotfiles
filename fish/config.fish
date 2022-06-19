@@ -56,6 +56,10 @@ abbr dc 'docker compose'
 abbr dcd 'docker compose down'
 abbr dcps 'docker compose ps -a'
 abbr dcup 'docker compose up'
+## exa
+abbr exal 'exa -al --time-style long-iso'
+abbr exl 'exa -l --time-style long-iso'
+abbr ext 'exa -I ".git" -aTL 2'
 ## git
 abbr gbl 'git blame'
 abbr gbr 'git branch'
