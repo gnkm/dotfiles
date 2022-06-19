@@ -71,7 +71,7 @@ abbr ggraph 'git log \
   --graph \
   --pretty=format:"%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset" \
   --date=iso'
-# detailed log
+### detailed log
 abbr glgd 'git log \
   --pretty=format:"%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset" \
   --date=iso \
@@ -79,7 +79,7 @@ abbr glgd 'git log \
   -C \
   -M \
   -p'
-# simple log
+### simple log
 abbr glgs 'git log \
   --pretty=format:"%C(yellow)%h%Creset %C(magenta)[%s]%d%Creset %C(cyan)%ad%Creset %C(red)%an%Creset" \
   --date=iso \
