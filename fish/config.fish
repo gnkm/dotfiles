@@ -61,6 +61,7 @@ abbr exal 'exa -al --time-style long-iso'
 abbr exl 'exa -l --time-style long-iso'
 abbr ext 'exa -I ".git" -aTL 2'
 ## git
+abbr ga 'git add'
 abbr gbl 'git blame'
 abbr gbr 'git branch'
 abbr gcam 'git commit -am'
@@ -90,6 +91,7 @@ abbr glgs 'git log \
 abbr gls 'git ls-files'
 abbr gp 'git push'
 abbr gr 'git restore'
+abbr grst 'git restore --staged'
 abbr gs 'git status'
 
 abbr gitlfsls 'git lfs ls-files'
