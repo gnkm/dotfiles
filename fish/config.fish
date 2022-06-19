@@ -46,6 +46,7 @@ alias sed gsed
 
 # abbrebeations
 abbr . 'source $HOME/.config/fish/config.fish'
+abbr ab 'cat $HOME/.config/fish/config.fish | rg "abbr" | less'
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
 abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | ag (datefymd) | tail -r
 ## docker
@@ -67,6 +68,7 @@ abbr gbl 'git blame'
 abbr gbr 'git branch'
 abbr gcam 'git commit -am'
 abbr gco 'git checkout'
+abbr gd 'git diff'
 abbr gf 'git fetch'
 ### graph
 abbr ggraph 'git log \
