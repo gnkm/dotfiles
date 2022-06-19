@@ -45,6 +45,7 @@ alias pip pip3
 alias sed gsed
 
 # abbrebeations
+abbr . 'source $HOME/.config/fish/config.fish'
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
 abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | ag (datefymd) | tail -r
 ## docker
@@ -98,4 +99,5 @@ abbr gitlfsls 'git lfs ls-files'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
 abbr la 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr ll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
+abbr md 'mkdir -p'
 abbr sa 'ssh-add (find $HOME/.ssh | fzf)'
