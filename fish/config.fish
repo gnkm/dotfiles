@@ -1,5 +1,3 @@
-eval (ssh-agent -c)
-
 # PATH
 ## brew
 if [ -d /opt/homebrew/bin ]; set -x PATH /opt/homebrew/bin $PATH; end
@@ -112,3 +110,7 @@ abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr md 'mkdir -p'
 abbr sa 'ssh-add (find $HOME/.ssh | fzf)'
+
+if not env | grep SSH_AGENT_PID --silent
+    eval (ssh-agent -c)
+end
