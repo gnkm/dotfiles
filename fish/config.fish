@@ -60,10 +60,6 @@ abbr dc 'docker compose'
 abbr dcd 'docker compose down'
 abbr dcps 'docker compose ps -a'
 abbr dcup 'docker compose up'
-## exa
-abbr exal 'exa -al --time-style long-iso'
-abbr exl 'exa -l --time-style long-iso'
-abbr ext 'exa -I ".git" -aTL 2'
 ## git
 abbr ga 'git add'
 abbr gbl 'git blame'
@@ -101,7 +97,12 @@ abbr gs 'git status'
 
 abbr gitlfsls 'git lfs ls-files'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
-abbr la 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
-abbr ll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
+## exa
+abbr la 'exa -al --time-style long-iso'
+abbr ll 'exa -l --time-style long-iso'
+abbr lt 'exa -I ".git" -aTL 2'
+
+abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
+abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr md 'mkdir -p'
 abbr sa 'ssh-add (find $HOME/.ssh | fzf)'
