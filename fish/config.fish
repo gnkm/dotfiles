@@ -39,6 +39,12 @@ function fish_right_prompt; end
 
 # aliases
 alias awk gawk
+## Use GNU grep on Mac
+if which ggrep > /dev/null
+    alias macgrep /usr/bin/grep
+    alias grep ggrep
+end
+
 ## Make python3 default.
 alias python python3
 alias pip pip3
