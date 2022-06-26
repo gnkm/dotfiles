@@ -18,6 +18,10 @@ if [ -d $HOME/Library/Python/3.9/bin ]; set -x PATH $HOME/Library/Python/3.9/bin
 # Loads some functions
 ## anyenv
 if which anyenv > /dev/null; status --is-interactive; and source (anyenv init -|psub); end
+# bang-bang
+if [ -f $HOME/.config/fish/functions/__history_previous_command.fish ]; source $HOME/.config/fish/functions/__history_previous_command.fish; end
+if [ -f $HOME/.config/fish/functions/__history_previous_command_arguments.fish ]; source $HOME/.config/fish/functions/__history_previous_command_arguments.fish; end
+if [ -f $HOME/.config/fish/conf.d/plugin-bang-bang.fish ]; source $HOME/.config/fish/conf.d/plugin-bang-bang.fish; end
 ## fisher
 if [ -f $HOME/.config/fish/functions/fisher.fish ]; source $HOME/.config/fish/functions/fisher.fish; end
 ## Google Cloud SDK
