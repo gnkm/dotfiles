@@ -105,6 +105,7 @@ abbr gs 'git status'
 
 abbr gitlfsls 'git lfs ls-files'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
+abbr home '$HOME'
 ## exa
 abbr la 'exa -al --time-style long-iso'
 abbr ll 'exa -l --time-style long-iso'
