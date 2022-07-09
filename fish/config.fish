@@ -114,7 +114,7 @@ abbr lt 'exa -I ".git" -aTL 2'
 abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr md 'mkdir -p'
-abbr sa 'ssh-add (find $HOME/.ssh | fzf)'
+abbr sa 'ssh-add (find $HOME/.ssh/ -name "id_*" -not -name "*.pub" | fzf)'
 
 if not env | grep SSH_AGENT_PID --silent
     eval (ssh-agent -c)
