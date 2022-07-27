@@ -117,6 +117,7 @@ abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr md 'mkdir -p'
 abbr sa 'ssh-add (find $HOME/.ssh/ -name "id_*" -not -name "*.pub" | fzf)'
+abbr week 'date +"%V"'
 
 if not env | grep SSH_AGENT_PID --silent
     eval (ssh-agent -c)
