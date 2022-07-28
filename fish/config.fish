@@ -116,6 +116,7 @@ abbr lt 'exa -I ".git" -aTL 2'
 abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr md 'mkdir -p'
+abbr rmr 'rm -rf'
 abbr sa 'ssh-add (find $HOME/.ssh/ -name "id_*" -not -name "*.pub" | fzf)'
 abbr week 'date +"%V"'
 
