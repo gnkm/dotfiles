@@ -60,8 +60,12 @@ abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
 abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | ag (datefymd) | tail -r
 ## docker
 abbr d 'docker'
+abbr di 'docker images'
 abbr dps 'docker ps -a'
 abbr drm 'docker rm'
+abbr drmi 'docker rmi'
+### docker rmi interactively
+abbr drmii 'docker rmi (docker images | fzf | awk \'{print $3}\')'
 abbr ds 'docker stop'
 ## docker compose
 abbr dc 'docker compose'
