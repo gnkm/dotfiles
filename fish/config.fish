@@ -10,6 +10,9 @@ if [ -d /opt/homebrew/opt/coreutils/libexec/gnubin ]; set -x PATH /opt/homebrew/
 ## GOPATH
 set -x GOPATH $HOME/projects
 if [ -d $GOPATH ]; set -x PATH $GOPATH/bin $PATH; end
+## Haskell
+## when execute `stack install`, execution file is saved here
+if [ -d $HOME/.local/bin ]; set -x PATH $HOME/.local/bin/ $PATH; end
 ## linux brew
 if [ -d $HOME/../linuxbrew/.linuxbrew/bin ]; set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH; end
 ## poetry
