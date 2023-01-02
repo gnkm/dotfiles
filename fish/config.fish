@@ -15,8 +15,6 @@ if [ -d $GOPATH ]; set -x PATH $GOPATH/bin $PATH; end
 if [ -d $HOME/.local/bin ]; set -x PATH $HOME/.local/bin/ $PATH; end
 ## linux brew
 if [ -d $HOME/../linuxbrew/.linuxbrew/bin ]; set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH; end
-## poetry
-if [ -d $HOME/Library/Python/3.9/bin ]; set -x PATH $HOME/Library/Python/3.9/bin $PATH; end
 
 # Loads some functions
 ## anyenv
