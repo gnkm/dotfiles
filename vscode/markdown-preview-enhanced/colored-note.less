@@ -1,0 +1,61 @@
+@color-neutral-100: #f5f5f5;
+@color-neutral-200: #e5e5e5;
+@color-neutral-300: #d4d4d4;
+@color-neutral-900: #171717;
+
+@color-blue-500: #3b82f6;
+@color-blue-800: #1e40af;
+
+@text-2xl: 24 px;
+@text-xl: 20 px;
+@text-lg: 18 px;
+@text-base: 16 px;
+
+.markdown-preview.markdown-preview {
+    font-family: "Ricty Diminished";
+    background-color: @color-neutral-200;
+    font-size: @text-base;
+
+    h1 {
+        padding: 0;
+        margin: 2px 0 20px 0;
+        font-size: @text-2xl;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 2px 0 10px 0;
+        font-size: @text-xl;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    h3 {
+        padding: 0;
+        margin: 2px 0 10px 0;
+        font-size: @text-lg;
+    }
+
+    a {
+        color: @color-blue-800;
+
+        &:hover {
+            color: @color-blue-500;
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+    }
+
+    pre,
+    code {
+        background-color: @color-neutral-300;
+    }
+
+    blockquote {
+        margin-left: 1px;
+        background-color: @color-neutral-100;
+        border-left-style: solid;
+        border-left-width: 5px;
+        border-left-color: @color-neutral-900;
+    }
+}

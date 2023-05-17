@@ -1,0 +1,40 @@
+@text-2xl: 24 px;
+@text-xl: 20 px;
+@text-lg: 18 px;
+@text-base: 16 px;
+
+.markdown-preview.markdown-preview {
+    font-family: "Ricty Diminished";
+    font-size: @text-base;
+
+    h1 {
+        padding: 0;
+        margin: 2px 0 20px 0;
+        font-size: @text-2xl;
+    }
+
+    h2 {
+        padding: 0;
+        margin: 2px 0 10px 0;
+        font-size: @text-xl;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    h3 {
+        padding: 0;
+        margin: 2px 0 10px 0;
+        font-size: @text-lg;
+    }
+
+    a:hover {
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+    }
+
+    blockquote {
+        margin-left: 1px;
+        border-left-style: solid;
+        border-left-width: 5px;
+    }
+}
