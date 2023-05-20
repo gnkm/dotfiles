@@ -56,6 +56,10 @@ alias sed gsed
 # abbrebeations
 abbr . 'source $HOME/.config/fish/config.fish'
 abbr ab 'cat $HOME/.config/fish/config.fish | rg "abbr" | less'
+# shorten Amazon URL
+# e.g. echo 'https://www.amazon.co.jp/xxx/dp/12345' | ama
+# => https://www.amazon.co.jp/dp/12345
+abbr ama "awk -F/ '{print \$1\"//\"\$3\"/\"\$5\"/\"\$6}'"
 abbr c 'code'
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
 abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | ag (datefymd) | tail -r
