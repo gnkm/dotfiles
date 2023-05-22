@@ -60,6 +60,7 @@ abbr ab 'cat $HOME/.config/fish/config.fish | rg "abbr" | less'
 # e.g. echo 'https://www.amazon.co.jp/xxx/dp/12345' | ama
 # => https://www.amazon.co.jp/dp/12345
 abbr ama "awk -F/ '{print \$1\"//\"\$3\"/\"\$5\"/\"\$6}'"
+abbr aria 'aria2c'
 abbr c 'code'
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
 abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | ag (datefymd) | tail -r
