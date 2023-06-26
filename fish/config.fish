@@ -65,6 +65,9 @@ abbr c 'code'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
 abbr home '$HOME'
 abbr md 'mkdir -p'
+# show directories vertically
+# e.g. pvd | tail -n 5
+abbr pvd 'pwd | sed -e "s/\//\/\n/g"'
 abbr rmr 'rm -rf'
 abbr sa 'ssh-add (find $HOME/.ssh/ -name "id_*" -not -name "*.pub" | fzf)'
 
