@@ -55,23 +55,30 @@ alias sed gsed
 
 # abbrebeations
 abbr . 'source $HOME/.config/fish/config.fish'
-abbr ab 'cat $HOME/.config/fish/config.fish | rg "abbr" | less'
+abbr ab 'cat $HOME/.config/fish/config.fish | rg "abbr" | less' # show abbrs
 # shorten Amazon URL
 # e.g. echo 'https://www.amazon.co.jp/xxx/dp/12345' | ama
 # => https://www.amazon.co.jp/dp/12345
 abbr ama "awk -F/ '{print \$1\"//\"\$3\"/\"\$5\"/\"\$6}'"
-abbr aria 'aria2c'
+abbr aria 'aria2c' # alt curl
 abbr c 'code'
+abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
+abbr home '$HOME'
+abbr md 'mkdir -p'
+abbr rmr 'rm -rf'
+abbr sa 'ssh-add (find $HOME/.ssh/ -name "id_*" -not -name "*.pub" | fzf)'
+
+## date
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
-abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | ag (datefymd) | tail -r
+abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | rg (datefymd) | tail -r
+abbr week 'date +"%V"'
 ## docker
 abbr d 'docker'
 abbr di 'docker images'
 abbr dps 'docker ps -a'
 abbr drm 'docker rm'
 abbr drmi 'docker rmi'
-### docker rmi interactively
-abbr drmii 'docker rmi (docker images | fzf | awk \'{print $3}\')'
+abbr drmii 'docker rmi (docker images | fzf | awk \'{print $3}\')' ### docker rmi interactively
 abbr ds 'docker stop'
 ## docker compose
 abbr dc 'docker compose'
@@ -115,21 +122,14 @@ abbr gp 'git push'
 abbr gr 'git restore'
 abbr grst 'git restore --staged'
 abbr gs 'git status'
-
 abbr gitlfsls 'git lfs ls-files'
-abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
-abbr home '$HOME'
 ## exa
 abbr la 'exa -al --time-style long-iso'
 abbr ll 'exa -l --time-style long-iso'
 abbr lt 'exa -I ".git" -aTL 2'
-
+## ls
 abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
-abbr md 'mkdir -p'
-abbr rmr 'rm -rf'
-abbr sa 'ssh-add (find $HOME/.ssh/ -name "id_*" -not -name "*.pub" | fzf)'
-abbr week 'date +"%V"'
 
 if not env | grep SSH_AGENT_PID --silent
     eval (ssh-agent -c)
