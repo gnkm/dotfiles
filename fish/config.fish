@@ -15,6 +15,9 @@ if [ -d $GOPATH ]; set -x PATH $GOPATH/bin $PATH; end
 if [ -d $HOME/.local/bin ]; set -x PATH $HOME/.local/bin/ $PATH; end
 ## linux brew
 if [ -d $HOME/../linuxbrew/.linuxbrew/bin ]; set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH; end
+# nvm
+set -x NVM_DIR $HOME/.nvm
+# and run `fisher install FabioAntunes/fish-nvm edc/bass`.
 
 # Loads some functions
 ## anyenv
