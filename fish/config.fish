@@ -25,6 +25,8 @@ set -x NVM_DIR $HOME/.nvm
 # Loads some functions
 ## anyenv
 if which anyenv > /dev/null; status --is-interactive; and source (anyenv init -|psub); end
+## asdf
+if [ -f /opt/homebrew/opt/asdf/libexec/asdf.fish ]; source /opt/homebrew/opt/asdf/libexec/asdf.fish; end
 # bang-bang
 if [ -f $HOME/.config/fish/functions/__history_previous_command.fish ]; source $HOME/.config/fish/functions/__history_previous_command.fish; end
 if [ -f $HOME/.config/fish/functions/__history_previous_command_arguments.fish ]; source $HOME/.config/fish/functions/__history_previous_command_arguments.fish; end
