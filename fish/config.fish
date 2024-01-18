@@ -22,6 +22,9 @@ if [ -d $MODULAR_HOME/pkg/packages.modular.com_mojo/bin ]; set -x PATH $MODULAR_
 set -x NVM_DIR $HOME/.nvm
 # and run `fisher install FabioAntunes/fish-nvm edc/bass`.
 
+## poetry
+set -x POETRY_CONFIG_DIR $HOME/.config/pypoetry
+
 # Loads some functions
 ## anyenv
 if which anyenv > /dev/null; status --is-interactive; and source (anyenv init -|psub); end
