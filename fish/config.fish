@@ -137,10 +137,10 @@ abbr gr 'git restore'
 abbr grst 'git restore --staged'
 abbr gs 'git status'
 abbr gitlfsls 'git lfs ls-files'
-## exa
-abbr la 'exa -al --time-style long-iso'
-abbr ll 'exa -l --time-style long-iso'
-abbr lt 'exa -I ".git" -aTL 2'
+## eza
+abbr la 'eza -al --time-style long-iso'
+abbr ll 'eza -l --time-style long-iso'
+abbr lt 'eza -I ".git" -aTL 2'
 ## ls
 abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
