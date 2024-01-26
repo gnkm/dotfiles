@@ -144,6 +144,8 @@ abbr lt 'eza -I ".git" -aTL 2'
 ## ls
 abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
+## random
+abbr dice 'random 1'
 
 if not env | grep SSH_AGENT_PID --silent
     eval (ssh-agent -c)
