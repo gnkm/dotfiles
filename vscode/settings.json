@@ -40,5 +40,13 @@
     },
     "emmet.preferences": {
         "filter.commentAfter": "<!-- /[#ID][.CLASS] -->"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": false,
+            "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
     }
 }
