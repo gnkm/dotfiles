@@ -1,9 +1,9 @@
 {
     "diffEditor.renderSideBySide": true,
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.fontFamily": "SauceCodePro Nerd Font",
+    "editor.fontFamily": "Ricty Diminished",
     "editor.wordWrap": "on",
-    "editor.fontSize": 14,
+    "editor.fontSize": 16,
     "workbench.colorTheme": "Zenburn",
     "python.pythonPath": "/Users/gnkm/.pyenv/versions/baseball-spaia/bin/python",
     "gruvboxMaterial.darkSelection": "green",
