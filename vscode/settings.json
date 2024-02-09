@@ -13,7 +13,7 @@
         "window.activeBorder": "#00aa00",
         "window.inactiveBorder": "#aa0000"
     },
-    "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+    "terminal.integrated.shell.osx": "/opt/homebrew/bin/fish",
     "workbench.iconTheme": "vscode-icons",
     "markdown-preview-enhanced-with-litvis.automaticallyShowPreviewOfMarkdownBeingEdited": false,
     "vsicons.dontShowNewVersionMessage": true,
