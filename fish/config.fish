@@ -26,8 +26,6 @@ set -x NVM_DIR $HOME/.nvm
 set -x POETRY_CONFIG_DIR $HOME/.config/pypoetry
 
 # Loads some functions
-## anyenv
-if which anyenv > /dev/null; status --is-interactive; and source (anyenv init -|psub); end
 ## asdf
 if [ -f /opt/homebrew/opt/asdf/libexec/asdf.fish ]; source /opt/homebrew/opt/asdf/libexec/asdf.fish; end
 # bang-bang
