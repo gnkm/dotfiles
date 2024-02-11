@@ -18,14 +18,6 @@
     "markdown-preview-enhanced-with-litvis.automaticallyShowPreviewOfMarkdownBeingEdited": false,
     "vsicons.dontShowNewVersionMessage": true,
     "python.showStartPage": false,
-    "mssql.connections": [
-        {
-            "server": "{{put-server-name-here}}",
-            "database": "{{put-database-name-here}}",
-            "user": "{{put-username-here}}",
-            "password": "{{put-password-here}}"
-        }
-    ],
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
