@@ -16,28 +16,50 @@
     "markdown-preview-enhanced-with-litvis.automaticallyShowPreviewOfMarkdownBeingEdited": false,
     "vsicons.dontShowNewVersionMessage": true,
     "python.showStartPage": false,
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
     "emmet.syntaxProfiles": {
         "html": {
             "filters": "html,c"
-        },
+        }
     },
     "emmet.preferences": {
         "filter.commentAfter": "<!-- /[#ID][.CLASS] -->"
     },
+    "editor.accessibilitySupport": "off",
+    "workbench.startupEditor": "none",
+    "editor.renderWhitespace": "all",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "python": false,
+        "novel": false
+    },
+    "markdown-preview-enhanced-with-litvis.breakOnSingleNewLine": false,
+    "editor.formatOnSave": true,
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
+    "[mdx]": {
+        "editor.formatOnSave": false
+    },
+    "git.openRepositoryInParentFolders": "never",
     "[python]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.fixAll": false,
-            "source.organizeImports": true
+            "source.fixAll": "never",
+            "source.organizeImports": "explicit"
         },
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
+    "prettier.requireConfig": true,
+    "prettier.enable": false,
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif, 'Ricty Diminished'",
+    "markdown-preview-enhanced.previewTheme": "medium.css",
+    "python.formatting.provider": "none",
+    "terminal.integrated.fontSize": 18,
+    "editor.fontVariations": false,
     "Novel.preview.lineLength": 41,
     "Novel.preview.linesPerPage": 17
 }
