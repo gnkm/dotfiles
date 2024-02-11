@@ -5,8 +5,6 @@
     "editor.wordWrap": "on",
     "editor.fontSize": 16,
     "workbench.colorTheme": "Zenburn",
-    "gruvboxMaterial.darkSelection": "green",
-    "gruvboxMaterial.lightSelection": "red",
     "workbench.colorCustomizations": {
         "editorGroup.border": "#ffffff",
         "tab.activeBorder": "#00aa00",
