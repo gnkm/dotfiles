@@ -58,7 +58,8 @@
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif, 'Ricty Diminished'",
     "markdown-preview-enhanced.previewTheme": "medium.css",
     "python.formatting.provider": "none",
-    "terminal.integrated.fontSize": 18,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
     "editor.fontVariations": false,
     "Novel.preview.lineLength": 41,
     "Novel.preview.linesPerPage": 17
