@@ -53,6 +53,7 @@
         },
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
+    "notebook.markup.fontSize": 10,
     "prettier.requireConfig": true,
     "prettier.enable": false,
     "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif, 'Ricty Diminished'",
