@@ -1,6 +1,3 @@
 [user]
 	name = gnkm
 	email = mail@example.com
-
-[ghq]
-root = ~/projects
