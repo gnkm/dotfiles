@@ -13,5 +13,6 @@ nicola-granata.zenburn-dark-matter
 pkief.material-icon-theme
 shd101wyy.markdown-preview-enhanced
 streetsidesoftware.code-spell-checker
+sysoev.language-stylus
 tuttieee.emacs-mcx
 yzhang.markdown-all-in-one
