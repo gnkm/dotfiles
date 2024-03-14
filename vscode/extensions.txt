@@ -10,6 +10,7 @@ ms-python.python
 ms-python.vscode-pylance
 neptunedesign.vs-sequential-number
 nicola-granata.zenburn-dark-matter
+njpwerner.autodocstring
 pkief.material-icon-theme
 shd101wyy.markdown-preview-enhanced
 streetsidesoftware.code-spell-checker
