@@ -1,3 +1,4 @@
+astro-build.astro-vscode
 charliermarsh.ruff
 editorconfig.editorconfig
 github.copilot
@@ -15,5 +16,7 @@ pkief.material-icon-theme
 shd101wyy.markdown-preview-enhanced
 streetsidesoftware.code-spell-checker
 sysoev.language-stylus
+tamasfe.even-better-toml
 tuttieee.emacs-mcx
+unifiedjs.vscode-mdx
 yzhang.markdown-all-in-one
