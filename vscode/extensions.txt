@@ -14,6 +14,7 @@ nicola-granata.zenburn-dark-matter
 njpwerner.autodocstring
 pkief.material-icon-theme
 shd101wyy.markdown-preview-enhanced
+skyapps.fish-vscode
 streetsidesoftware.code-spell-checker
 sysoev.language-stylus
 tamasfe.even-better-toml
