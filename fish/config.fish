@@ -13,6 +13,8 @@ if [ -d $GOPATH ]; set -x PATH $GOPATH/bin $PATH; end
 ## Haskell
 ## when execute `stack install`, execution file is saved here
 if [ -d $HOME/.local/bin ]; set -x PATH $HOME/.local/bin/ $PATH; end
+### ghcup-env
+set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $HOME/.ghcup/bin $PATH
 ## linux brew
 if [ -d $HOME/../linuxbrew/.linuxbrew/bin ]; set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH; end
 # modular
@@ -144,5 +146,3 @@ abbr dice 'random 1'
 if not env | grep SSH_AGENT_PID --silent
     eval (ssh-agent -c)
 end
-
-set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $PATH /Users/gnkm/.ghcup/bin # ghcup-env
