@@ -33,10 +33,11 @@
     "editor.renderWhitespace": "all",
     "editor.inlineSuggest.enabled": true,
     "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
+        "*": false,
         "plaintext": false,
         "markdown": false,
+        "scminput": false,
+        "yaml": false,
         "python": false,
         "novel": false
     },
@@ -64,5 +65,7 @@
     "Novel.preview.lineLength": 41,
     "Novel.preview.linesPerPage": 17,
     "workbench.colorTheme": "Zenburn Dark Matter - Nadir - Meabh",
-    "terminal.external.osxExec": "iTerm.app"
+    "terminal.external.osxExec": "iTerm.app",
+    "haskell.manageHLS": "GHCup",
+    "chat.editor.fontSize": 14
 }
