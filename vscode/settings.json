@@ -67,5 +67,10 @@
     "workbench.colorTheme": "Zenburn Dark Matter - Nadir - Meabh",
     "terminal.external.osxExec": "iTerm.app",
     "haskell.manageHLS": "GHCup",
-    "chat.editor.fontSize": 14
+    "chat.editor.fontSize": 14,
+    "codesnap.backgroundColor": "#ffffff",
+    "codesnap.containerPadding": 0,
+    "codesnap.target": "container",
+    "codesnap.realLineNumbers": true,
+    "codesnap.showWindowTitle": false
 }

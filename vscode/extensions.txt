@@ -1,3 +1,4 @@
+adpyke.codesnap
 astro-build.astro-vscode
 catbraaain.mermaid-language
 charliermarsh.ruff
