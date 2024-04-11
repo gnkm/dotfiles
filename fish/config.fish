@@ -97,7 +97,7 @@ abbr dcps 'docker compose ps -a'
 abbr dcup 'docker compose up'
 ## git
 abbr ga 'git add'
-abbr gan 'git add -n'
+abbr gan 'git add . -n'
 abbr gbl 'git blame'
 abbr gbr 'git branch'
 abbr gcm 'git commit'
