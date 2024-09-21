@@ -81,6 +81,8 @@ abbr sa 'ssh-add (find $HOME/.ssh/ -name "id_*" -not -name "*.pub" | fzf)'
 abbr datefs 'date +"%Y/%m/%d(%a) %H:%M:%S"'
 abbr datefymd 'date +"%Y-%m-%d"'  # e.g. glgs | rg (datefymd) | tail -r
 abbr week 'date +"%V"'
+## delta(diff)
+abbr dltlr 'delta --side-by-side'
 ## docker
 abbr d 'docker'
 abbr di 'docker images'
