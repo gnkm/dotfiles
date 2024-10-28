@@ -24,6 +24,8 @@ if [ -d $MODULAR_HOME/pkg/packages.modular.com_mojo/bin ]; set -x PATH $MODULAR_
 
 ## poetry
 set -x POETRY_CONFIG_DIR $HOME/.config/pypoetry
+## wezterm
+if [ -d /Applications/WezTerm.app/Contents/MacOS ]; set -x PATH /Applications/WezTerm.app/Contents/MacOS $PATH; end
 
 # Loads some functions
 ## asdf
