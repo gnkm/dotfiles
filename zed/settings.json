@@ -27,6 +27,25 @@
     "dark": "One Dark"
   },
   "soft_wrap": "editor_width",
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true,
+            "source.fixAll.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
+        }
+      ]
+    }
+  },
   "terminal": {
     "font_family": "SauceCodePro Nerd Font Mono",
     "font_size": 14
