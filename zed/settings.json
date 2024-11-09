@@ -25,5 +25,10 @@
     "mode": "system",
     "light": "Base16 Zenburn",
     "dark": "One Dark"
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
   }
 }
