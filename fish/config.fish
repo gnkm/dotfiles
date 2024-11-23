@@ -22,6 +22,12 @@ if [ -d $HOME/.modular ]; set -x MODULAR_HOME $HOME/.modular; end
 if [ -d $MODULAR_HOME/pkg/packages.modular.com_mojo/bin ]; set -x PATH $MODULAR_HOME/pkg/packages.modular.com_mojo/bin $PATH; end
 # and run `fisher install FabioAntunes/fish-nvm edc/bass`.
 
+# rustup shell setup
+if not contains "$HOME/.cargo/bin" $PATH
+    # Prepending path in case a system-installed rustc needs to be overridden
+    set -x PATH "$HOME/.cargo/bin" $PATH
+end
+
 ## poetry
 set -x POETRY_CONFIG_DIR $HOME/.config/pypoetry
 ## wezterm
