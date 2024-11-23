@@ -1,6 +1,7 @@
 atom/.apm/*
 atom/packages/*
 atom/projects.cson
+continue/config.json
 emacs/.cask
 emacs/abbrev_defs
 emacs/auto-install
