@@ -5,7 +5,16 @@
     "editor.wordWrap": "on",
     "editor.fontSize": 16,
     "workbench.colorCustomizations": {
+        "[Zenburn Dark Matter - Nadir - Meabh]": {
+            "activityBar.background": "#6f6f6f",
+            "sideBar.background": "#6f6f6f",
+            "terminal.background": "#6f6f6f",
+            "tab.activeBackground": "#446644",
+            "tab.inactiveBackground": "#555555",
+            "titleBar.activeBackground": "#6f6f6f"
+        },
         "editorGroup.border": "#ffffff",
+        "editor.background": "#6f6f6f",
         "tab.activeBorder": "#00aa00",
         "window.activeBorder": "#00aa00",
         "window.inactiveBorder": "#aa0000"
@@ -72,5 +81,11 @@
     "codesnap.containerPadding": 0,
     "codesnap.target": "container",
     "codesnap.realLineNumbers": true,
-    "codesnap.showWindowTitle": false
+    "codesnap.showWindowTitle": false,
+    "continue.enableTabAutocomplete": false,
+    "redhat.telemetry.enabled": false,
+    "supermaven.enableFixWithSupermaven": true,
+    "supermaven.enable": {
+        "*": false
+    }
 }
