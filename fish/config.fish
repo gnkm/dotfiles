@@ -76,6 +76,7 @@ abbr . 'source $HOME/.config/fish/config.fish'
 abbr ama "awk -F/ '{print \$1\"//\"\$3\"/\"\$5\"/\"\$6}'"
 abbr aria 'aria2c' # alt curl
 abbr c 'code'
+abbr d 'conda deactivate'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
 abbr home '$HOME'
 abbr md 'mkdir -p'
@@ -92,7 +93,6 @@ abbr week 'date +"%V"'
 ## delta(diff)
 abbr dltlr 'delta --side-by-side'
 ## docker
-abbr d 'docker'
 abbr di 'docker images'
 abbr dps 'docker ps -a'
 abbr drm 'docker rm'
