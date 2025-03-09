@@ -5,7 +5,16 @@
     "editor.wordWrap": "on",
     "editor.fontSize": 16,
     "workbench.colorCustomizations": {
+        "[Zenburn Dark Matter - Nadir - Meabh]": {
+            "activityBar.background": "#6f6f6f",
+            "sideBar.background": "#6f6f6f",
+            "terminal.background": "#6f6f6f",
+            "tab.activeBackground": "#446644",
+            "tab.inactiveBackground": "#555555",
+            "titleBar.activeBackground": "#6f6f6f"
+        },
         "editorGroup.border": "#ffffff",
+        "editor.background": "#6f6f6f",
         "tab.activeBorder": "#00aa00",
         "window.activeBorder": "#00aa00",
         "window.inactiveBorder": "#aa0000"
@@ -38,7 +47,7 @@
         "markdown": false,
         "scminput": false,
         "yaml": false,
-        "python": true,
+        "python": false,
         "novel": false
     },
     "editor.formatOnSave": true,
@@ -62,9 +71,7 @@
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
     "editor.fontVariations": false,
-    "Novel.preview.lineLength": 41,
-    "Novel.preview.linesPerPage": 17,
-    "workbench.colorTheme": "Zenburn Dark Matter - Warm - Sulfur",
+    "workbench.colorTheme": "Zenburn Dark Matter - Nadir - Meabh",
     "terminal.external.osxExec": "iTerm.app",
     "haskell.manageHLS": "GHCup",
     "chat.editor.fontSize": 14,
@@ -78,7 +85,5 @@
     "supermaven.enableFixWithSupermaven": true,
     "supermaven.enable": {
         "*": false
-    },
-    "windsurf.autocompleteSpeed": "fast",
-    "workbench.preferredDarkColorTheme": "Zenburn Dark Matter - Warm - Sulfur"
+    }
 }
