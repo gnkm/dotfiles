@@ -151,6 +151,7 @@ abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
 ## random
 abbr dice 'random 1'
+abbr wind 'windsurf'
 
 if not env | grep SSH_AGENT_PID --silent
     eval (ssh-agent -c)
@@ -180,3 +181,6 @@ else
     end
 end
 # <<< conda initialize <<<
+
+# Added by Windsurf
+fish_add_path $HOME/.codeium/windsurf/bin
