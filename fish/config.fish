@@ -30,6 +30,8 @@ end
 
 ## poetry
 set -x POETRY_CONFIG_DIR $HOME/.config/pypoetry
+## windsurf
+if [ -d $HOME/.codeium/windsurf/bin ]; set -x PATH $HOME/.codeium/windsurf/bin $PATH; end
 ## wezterm
 if [ -d /Applications/WezTerm.app/Contents/MacOS ]; set -x PATH /Applications/WezTerm.app/Contents/MacOS $PATH; end
 
@@ -181,6 +183,3 @@ else
     end
 end
 # <<< conda initialize <<<
-
-# Added by Windsurf
-fish_add_path $HOME/.codeium/windsurf/bin
