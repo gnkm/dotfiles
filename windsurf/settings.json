@@ -41,15 +41,6 @@
     "workbench.startupEditor": "none",
     "editor.renderWhitespace": "all",
     "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-        "*": false,
-        "plaintext": false,
-        "markdown": false,
-        "scminput": false,
-        "yaml": false,
-        "python": false,
-        "novel": false
-    },
     "editor.formatOnSave": true,
     "[markdown]": {
         "editor.formatOnSave": false
@@ -80,10 +71,5 @@
     "codesnap.target": "container",
     "codesnap.realLineNumbers": true,
     "codesnap.showWindowTitle": false,
-    "continue.enableTabAutocomplete": false,
-    "redhat.telemetry.enabled": false,
-    "supermaven.enableFixWithSupermaven": true,
-    "supermaven.enable": {
-        "*": false
-    }
+    "windsurf.autocompleteSpeed": "default"
 }
