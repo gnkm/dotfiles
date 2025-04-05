@@ -1,0 +1,82 @@
+{
+    "diffEditor.renderSideBySide": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "PlemolJP",
+    "editor.wordWrap": "on",
+    "editor.fontSize": 16,
+    "workbench.colorCustomizations": {
+        "[Zenburn Dark Matter - Nadir - Meabh]": {
+            "activityBar.background": "#6f6f6f",
+            "sideBar.background": "#6f6f6f",
+            "terminal.background": "#6f6f6f",
+            "tab.activeBackground": "#446644",
+            "tab.inactiveBackground": "#555555",
+            "titleBar.activeBackground": "#6f6f6f"
+        },
+        "editorGroup.border": "#ffffff",
+        "editor.background": "#6f6f6f",
+        "tab.activeBorder": "#00aa00",
+        "window.activeBorder": "#00aa00",
+        "window.inactiveBorder": "#aa0000"
+    },
+    "terminal.integrated.profiles.osx": {
+        "fish": {
+            "path": "/opt/homebrew/bin/fish",
+            "args": [
+                "-l"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "workbench.iconTheme": "material-icon-theme",
+    "emmet.syntaxProfiles": {
+        "html": {
+            "filters": "html,c"
+        }
+    },
+    "emmet.preferences": {
+        "filter.commentAfter": "<!-- /[#ID][.CLASS] -->"
+    },
+    "editor.accessibilitySupport": "off",
+    "editor.renderWhitespace": "all",
+    "editor.inlineSuggest.enabled": true,
+    "editor.formatOnSave": true,
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
+    "[mdx]": {
+        "editor.formatOnSave": false
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "never",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "notebook.markup.fontSize": 10,
+    "markdown.preview.fontFamily": "PlemolJP",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+    "editor.fontVariations": false,
+    "workbench.colorTheme": "Zenburn Dark Matter - Nadir - Meabh",
+    "terminal.external.osxExec": "iTerm.app",
+    "haskell.manageHLS": "GHCup",
+    "chat.editor.fontSize": 14,
+    "codesnap.backgroundColor": "#ffffff",
+    "codesnap.containerPadding": 0,
+    "codesnap.target": "container",
+    "codesnap.realLineNumbers": true,
+    "codesnap.showWindowTitle": false,
+    "redhat.telemetry.enabled": false,
+    "cursor.cpp.disabledLanguages": [
+        "plaintext",
+        "markdown",
+        "scminput",
+        "yaml",
+        "python",
+        "novel"
+    ]
+}
