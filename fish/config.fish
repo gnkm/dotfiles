@@ -77,7 +77,7 @@ abbr . 'source $HOME/.config/fish/config.fish'
 # => https://www.amazon.co.jp/dp/12345
 abbr ama "awk -F/ '{print \$1\"//\"\$3\"/\"\$5\"/\"\$6}'"
 abbr aria 'aria2c' # alt curl
-abbr c 'code'
+abbr c 'cursor'
 abbr d 'conda deactivate'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
 abbr home '$HOME'
