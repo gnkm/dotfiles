@@ -71,13 +71,13 @@ alias pip pip3
 alias sed gsed
 
 # abbrebeations
-abbr . 'source $HOME/.config/fish/config.fish'
 # shorten Amazon URL
 # e.g. echo 'https://www.amazon.co.jp/xxx/dp/12345' | ama
 # => https://www.amazon.co.jp/dp/12345
 abbr ama "awk -F/ '{print \$1\"//\"\$3\"/\"\$5\"/\"\$6}'"
 abbr aria 'aria2c' # alt curl
 abbr c 'cursor'
+abbr conf 'source $HOME/.config/fish/config.fish'
 abbr d 'conda deactivate'
 abbr hist 'history --show-time="%Y-%m-%d %H:%M:%S "'
 abbr home '$HOME'
