@@ -1,3 +1,5 @@
 font-family = SauceCodePro Nerd Font Mono
 font-size = 15
 theme = my-zenburn
+font-feature = -dlig
+keybind = shift+enter=text:\n
