@@ -5,6 +5,9 @@ if [ -d /opt/homebrew/bin ]; set -x PATH /opt/homebrew/bin $PATH; end
 if [ -d $HOME/.cabal/bin ]; set -x PATH $HOME/.cabal/bin $PATH; end
 ## cask
 if [ -d $HOME/.cask/bin ]; set -x PATH $HOME/.cask/bin $PATH; end
+## conda
+if [ -d /opt/miniconda3/bin ]; set -x PATH /opt/miniconda3/bin $PATH; end
+if [ -d /opt/anaconda3/bin ]; set -x PATH /opt/anaconda3/bin $PATH; end
 ## coreutils
 if [ -d /opt/homebrew/opt/coreutils/libexec/gnubin ]; set -x PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH; end
 ## GOPATH
@@ -158,28 +161,3 @@ abbr wind 'windsurf'
 if not env | grep SSH_AGENT_PID --silent
     eval (ssh-agent -c)
 end
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-if test -f /opt/miniconda3/bin/conda
-    eval /opt/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/opt/miniconda3/etc/fish/conf.d/conda.fish"
-        . "/opt/miniconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/opt/miniconda3/bin" $PATH
-    end
-end
-# <<< conda initialize <<<
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-if test -f /opt/anaconda3/bin/conda
-    eval /opt/anaconda3/bin/conda "shell.fish" "hook" $argv | source
-else
-    if test -f "/opt/anaconda3/etc/fish/conf.d/conda.fish"
-        . "/opt/anaconda3/etc/fish/conf.d/conda.fish"
-    else
-        set -x PATH "/opt/anaconda3/bin" $PATH
-    end
-end
-# <<< conda initialize <<<
