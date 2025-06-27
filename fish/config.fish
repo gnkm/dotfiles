@@ -155,6 +155,8 @@ abbr lt 'eza -I ".git" -aTL 2'
 ## ls
 abbr lla 'ls -la --time-style="+%Y-%m-%d %H:%M:%S"'
 abbr lll 'ls -l --time-style="+%Y-%m-%d %H:%M:%S"'
+## Obsidian
+abbr obgcam 'date +"%Y-%m-%d %H:%M:%S" | xargs -I@ git commit -am "@"'
 ## random
 abbr dice 'random 1'
 abbr wind 'windsurf'
