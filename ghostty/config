@@ -3,3 +3,4 @@ font-size = 15
 theme = my-zenburn
 font-feature = -dlig
 keybind = shift+enter=text:\n
+macos-option-as-alt = true
