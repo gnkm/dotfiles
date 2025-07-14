@@ -1,0 +1,19 @@
+---
+description: ウィークリーサマリーノートを作るツールの使用方法
+globs: daily-note/*
+alwaysApply: false
+---
+
+週間サマリー（ウィークリーサマリー）のマークダウンファイルを作るにあたって `scripts/make_weekly_summary.py` を使うことができます。
+
+使い方は以下のとおりです。
+
+```
+python scripts/make_weekly_summary.py year week
+```
+
+例として以下のような使い方ができます。
+
+```
+python scripts/make_weekly_summary.py 2025 28
+```

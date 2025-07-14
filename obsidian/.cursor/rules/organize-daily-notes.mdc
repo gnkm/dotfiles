@@ -1,0 +1,20 @@
+---
+description: デイリーノートのファイルを移動するツールの使用方法
+globs: daily-note/*
+alwaysApply: false
+---
+
+デイリーノートのファイルを移動するにあたり、 `scripts/organize_daily_notes.py` を使うことができます。
+これは、指定されたデイリーノートファイルを、そのフロントマターに記載された週番号に基づいて、適切な週ごとのフォルダに移動します。
+
+使い方は以下のとおりです。
+
+```
+python scripts/organize_daily_notes.py path/to/your/note.md
+```
+
+例として以下のような使い方ができます。
+
+```
+python scripts/organize_daily_notes.py daily-note/2025/2025-07-12.md
+```
