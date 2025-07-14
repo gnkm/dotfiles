@@ -7,7 +7,7 @@
                 "@pinecone-database/mcp"
             ],
             "env": {
-                "PINECONE_API_KEY": "your api key"
+                "PINECONE_API_KEY": "${PINECONE_API_KEY}"
             }
         },
         "context7": {
