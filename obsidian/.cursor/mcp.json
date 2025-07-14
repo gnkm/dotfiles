@@ -7,7 +7,7 @@
                 "@pinecone-database/mcp"
             ],
             "env": {
-                "PINECONE_API_KEY": "pcsk_5sBL1M_Bx7aH4rYYknptESo4sWs8Ab6nB5VWHc6DpeSJAmjP3JwJyUDbJjznHYDspB8Wnh"
+                "PINECONE_API_KEY": "your api key"
             }
         },
         "context7": {
