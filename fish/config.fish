@@ -14,6 +14,8 @@ if [ -d /opt/homebrew/opt/coreutils/libexec/gnubin ]; set -x PATH /opt/homebrew/
 set -x GOPATH $HOME/projects
 if [ -d $GOPATH ]; set -x PATH $GOPATH/bin $PATH; end
 ## Haskell
+## LM Studio CLI
+if [ -d $HOME/.cache/lm-studio/bin ]; set -x PATH $HOME/.cache/lm-studio/bin $PATH; end
 ## when execute `stack install`, execution file is saved here
 if [ -d $HOME/.local/bin ]; set -x PATH $HOME/.local/bin/ $PATH; end
 ### ghcup-env
