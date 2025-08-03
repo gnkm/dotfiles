@@ -1,0 +1,25 @@
+name: My Zenburn 01 # Name for the theme
+accent: "#a8d6da" # Accent color for UI elements
+cursor: "#e2e2d6" # Input cursor color (optional; defaults to accent color if omitted)
+background: "#5a5a5a" # Terminal background color
+foreground: "#e2e2d6" # The foreground color
+details: darker # Whether the theme is lighter or darker
+terminal_colors: # Ansi escape colors
+  bright:
+    black: "#889f93"
+    blue: "#abcaf1"
+    cyan: "#b0e3e7"
+    green: "#cdc9b1"
+    magenta: "#e6abd8"
+    red: "#dcb5b3"
+    white: "#fefefe"
+    yellow: "#e3d7b3"
+  normal:
+    black: "#808080"
+    blue: "#6e93e6"
+    cyan: "#a8d6da"
+    green: "#82bc9e"
+    magenta: "#daa3cb"
+    red: "#c22f82"
+    white: "#e2e2d6"
+    yellow: "#f0e4c0"
