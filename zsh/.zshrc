@@ -27,3 +27,9 @@ if type abbr &> /dev/null; then
   abbr gd='git diff'
   abbr gf='git fetch'
 fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:$HOME/.cache/lm-studio/bin"
+# End of LM Studio CLI section
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
