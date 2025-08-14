@@ -149,6 +149,7 @@ abbr gp 'git push'
 abbr gr 'git restore'
 abbr grst 'git restore --staged'
 abbr gs 'git status'
+abbr gsw 'git switch'
 abbr gitlfsls 'git lfs ls-files'
 ## eza
 abbr la 'eza -al --time-style long-iso'
