@@ -1,31 +1,63 @@
 # PATH
+if [ -d $HOME/.antigravity/antigravity/bin ]
+    set -x PATH $HOME/.antigravity/antigravity/bin $PATH
+end
 ## brew
-if [ -d /opt/homebrew/bin ]; set -x PATH /opt/homebrew/bin $PATH; end
+if [ -d /opt/homebrew/bin ]
+    set -x PATH /opt/homebrew/bin $PATH
+end
 ## cabal
-if [ -d $HOME/.cabal/bin ]; set -x PATH $HOME/.cabal/bin $PATH; end
+if [ -d $HOME/.cabal/bin ]
+    set -x PATH $HOME/.cabal/bin $PATH
+end
 ## cask
-if [ -d $HOME/.cask/bin ]; set -x PATH $HOME/.cask/bin $PATH; end
+if [ -d $HOME/.cask/bin ]
+    set -x PATH $HOME/.cask/bin $PATH
+end
 ## conda
-if [ -d /opt/miniconda3/bin ]; set -x PATH /opt/miniconda3/bin $PATH; end
-if [ -d /opt/anaconda3/bin ]; set -x PATH /opt/anaconda3/bin $PATH; end
+if [ -d /opt/miniconda3/bin ]
+    set -x PATH /opt/miniconda3/bin $PATH
+end
+if [ -d /opt/anaconda3/bin ]
+    set -x PATH /opt/anaconda3/bin $PATH
+end
 ## coreutils
-if [ -d /opt/homebrew/opt/coreutils/libexec/gnubin ]; set -x PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH; end
+if [ -d /opt/homebrew/opt/coreutils/libexec/gnubin ]
+    set -x PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH
+end
 ## GOPATH
 set -x GOPATH $HOME/projects
-if [ -d $GOPATH ]; set -x PATH $GOPATH/bin $PATH; end
+if [ -d $GOPATH ]
+    set -x PATH $GOPATH/bin $PATH
+end
 ## Haskell
 ## LM Studio CLI
-if [ -d $HOME/.cache/lm-studio/bin ]; set -x PATH $HOME/.cache/lm-studio/bin $PATH; end
+if [ -d $HOME/.cache/lm-studio/bin ]
+    set -x PATH $HOME/.cache/lm-studio/bin $PATH
+end
 ## when execute `stack install`, execution file is saved here
-if [ -d $HOME/.local/bin ]; set -x PATH $HOME/.local/bin/ $PATH; end
+if [ -d $HOME/.local/bin ]
+    set -x PATH $HOME/.local/bin/ $PATH
+end
 ### ghcup-env
 set -q GHCUP_INSTALL_BASE_PREFIX[1]; or set GHCUP_INSTALL_BASE_PREFIX $HOME ; set -gx PATH $HOME/.cabal/bin $HOME/.ghcup/bin $PATH
 ## linux brew
-if [ -d $HOME/../linuxbrew/.linuxbrew/bin ]; set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH; end
+if [ -d $HOME/../linuxbrew/.linuxbrew/bin ]
+    set -x PATH $HOME/../linuxbrew/.linuxbrew/bin/ $PATH
+end
 # modular
-if [ -d $HOME/.modular ]; set -x MODULAR_HOME $HOME/.modular; end
-if [ -d $MODULAR_HOME/pkg/packages.modular.com_mojo/bin ]; set -x PATH $MODULAR_HOME/pkg/packages.modular.com_mojo/bin $PATH; end
+if [ -d $HOME/.modular ]
+    set -x MODULAR_HOME $HOME/.modular
+end
+if [ -d $MODULAR_HOME/pkg/packages.modular.com_mojo/bin ]
+    set -x PATH $MODULAR_HOME/pkg/packages.modular.com_mojo/bin $PATH
+end
 # and run `fisher install FabioAntunes/fish-nvm edc/bass`.
+
+# Ruby
+if [ -d /opt/homebrew/opt/ruby/bin ]
+    set -x PATH /opt/homebrew/opt/ruby/bin $PATH
+end
 
 # rustup shell setup
 if not contains "$HOME/.cargo/bin" $PATH
@@ -36,23 +68,41 @@ end
 ## poetry
 set -x POETRY_CONFIG_DIR $HOME/.config/pypoetry
 ## windsurf
-if [ -d $HOME/.codeium/windsurf/bin ]; set -x PATH $HOME/.codeium/windsurf/bin $PATH; end
+if [ -d $HOME/.codeium/windsurf/bin ]
+    set -x PATH $HOME/.codeium/windsurf/bin $PATH
+end
 ## wezterm
-if [ -d /Applications/WezTerm.app/Contents/MacOS ]; set -x PATH /Applications/WezTerm.app/Contents/MacOS $PATH; end
+if [ -d /Applications/WezTerm.app/Contents/MacOS ]
+    set -x PATH /Applications/WezTerm.app/Contents/MacOS $PATH
+end
 
 # Loads some functions
 ## asdf
-if [ -f /opt/homebrew/opt/asdf/libexec/asdf.fish ]; source /opt/homebrew/opt/asdf/libexec/asdf.fish; end
+if [ -f /opt/homebrew/opt/asdf/libexec/asdf.fish ]
+    source /opt/homebrew/opt/asdf/libexec/asdf.fish
+end
 # bang-bang
-if [ -f $HOME/.config/fish/functions/__history_previous_command.fish ]; source $HOME/.config/fish/functions/__history_previous_command.fish; end
-if [ -f $HOME/.config/fish/functions/__history_previous_command_arguments.fish ]; source $HOME/.config/fish/functions/__history_previous_command_arguments.fish; end
-if [ -f $HOME/.config/fish/conf.d/plugin-bang-bang.fish ]; source $HOME/.config/fish/conf.d/plugin-bang-bang.fish; end
+if [ -f $HOME/.config/fish/functions/__history_previous_command.fish ]
+    source $HOME/.config/fish/functions/__history_previous_command.fish
+end
+if [ -f $HOME/.config/fish/functions/__history_previous_command_arguments.fish ]
+    source $HOME/.config/fish/functions/__history_previous_command_arguments.fish
+end
+if [ -f $HOME/.config/fish/conf.d/plugin-bang-bang.fish ]
+    source $HOME/.config/fish/conf.d/plugin-bang-bang.fish
+end
 ## fisher
-if [ -f $HOME/.config/fish/functions/fisher.fish ]; source $HOME/.config/fish/functions/fisher.fish; end
+if [ -f $HOME/.config/fish/functions/fisher.fish ]
+    source $HOME/.config/fish/functions/fisher.fish
+end
 ## Google Cloud SDK
-if [ -f $HOME/google-cloud-sdk/path.fish.inc ]; source $HOME/google-cloud-sdk/path.fish.inc; end
+if [ -f $HOME/google-cloud-sdk/path.fish.inc ]
+    source $HOME/google-cloud-sdk/path.fish.inc
+end
 ## zoxide
-if which zoxide > /dev/null; status --is-interactive; and zoxide init --cmd j fish | source; end
+if which zoxide > /dev/null
+    status --is-interactive; and zoxide init --cmd j fish | source
+end
 
 # Appearance
 ## https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md
@@ -172,4 +222,8 @@ end
 set -gx PATH $PATH $HOME/.cache/lm-studio/bin
 # End of LM Studio CLI section
 
-string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
+if string match -q "$TERM_PROGRAM" "kiro"
+    if which kiro > /dev/null
+        . (kiro --locate-shell-integration-path fish)
+    end
+end
