@@ -25,6 +25,10 @@ end
 if [ -d /opt/homebrew/opt/coreutils/libexec/gnubin ]
     set -x PATH /opt/homebrew/opt/coreutils/libexec/gnubin $PATH
 end
+## Flutterfire
+if [ -d $HOME/.pub-cache/bin ]
+    set -x PATH $HOME/.pub-cache/bin $PATH
+end
 ## GOPATH
 set -x GOPATH $HOME/projects
 if [ -d $GOPATH ]
