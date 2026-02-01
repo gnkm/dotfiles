@@ -226,8 +226,16 @@ end
 set -gx PATH $PATH $HOME/.cache/lm-studio/bin
 # End of LM Studio CLI section
 
-if string match -q "$TERM_PROGRAM" "kiro"
-    if which kiro > /dev/null
-        . (kiro --locate-shell-integration-path fish)
-    end
-end
+string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH $HOME/.cache/lm-studio/bin
+# End of LM Studio CLI section
+
+
+# Added by Antigravity
+fish_add_path $HOME/.antigravity/antigravity/bin
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
