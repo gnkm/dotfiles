@@ -229,8 +229,6 @@ end
 set -gx PATH $PATH $HOME/.cache/lm-studio/bin
 # End of LM Studio CLI section
 
-string match -q "$TERM_PROGRAM" "kiro" and . (kiro --locate-shell-integration-path fish)
-
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH $HOME/.cache/lm-studio/bin
 # End of LM Studio CLI section
