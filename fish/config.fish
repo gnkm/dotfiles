@@ -58,6 +58,11 @@ if [ -d $MODULAR_HOME/pkg/packages.modular.com_mojo/bin ]
 end
 # and run `fisher install FabioAntunes/fish-nvm edc/bass`.
 
+# Nebius
+if [ -d $HOME/.nebius/bin ]
+    set -x PATH $HOME/.nebius/bin $PATH
+end
+
 # podman
 if [ -d /opt/podman/bin ]
     set -x PATH /opt/podman/bin $PATH
